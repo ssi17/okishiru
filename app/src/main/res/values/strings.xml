@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">sotuken v2</string>
+
+    <!--    fragment_information-->
+    <string name="start_text">再生ボタンを押すと\n発信された情報がこちらに\n表示されます</string>
+
+    <!--    fragment_setting-->
+    <string name="setting_title">Setting</string>
+    <string name="setting_text">再生したい情報を選択してください</string>
+    <string name="setting_sound">サウンド設定</string>
+    <string name="sound_switch">バックサウンド</string>
+    <string name="setting_guide">ガイド設定</string>
+    <string name="tourist_sight_switch">観光スポット</string>
+    <string name="restaurant_switch">飲食店</string>
+    <string name="history_switch">歴史</string>
+    <string name="trivia_switch">雑学</string>
+
+    <!--    item_view-->
+    <string name="information_title">Information</string>
+    <string name="item_image_description">この情報に関する画像です</string>
+    <string name="favorite_button_description">お気に入りに登録するためのボタンです</string>
+
+    <string name="item_page">≫ページへ</string>
+    <string name="item_map">≫マップを開く</string>
+</resources>

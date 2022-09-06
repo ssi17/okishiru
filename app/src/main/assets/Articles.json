@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "首里城",
+    "describe": "首里城は、琉球王朝の王城で沖縄県内最大規模の城です。",
+    "url": "https://oki-park.jp/shurijo/about/",
+    "img": "article_img_shurijo",
+    "map": "https://www.google.co.jp/maps/place/%E9%A6%96%E9%87%8C%E5%9F%8E%E5%85%AC%E5%9C%92/@26.2170449,127.7172946,17z/data=!3m1!4b1!4m5!3m4!1s0x34e56bfe6cf4db67:0xc0899fbab29e4f8b!8m2!3d26.2170449!4d127.7194833?hl=ja"
+  },
+  {
+    "id": 2,
+    "name": "美ら海水族館",
+    "describe": "美ら海水族館は、海洋博公園にある人気スポットです。",
+    "url": "https://churaumi.okinawa/",
+    "img": "article_img_churaumi",
+    "map": "https://www.google.co.jp/maps/place/%E6%B2%96%E7%B8%84%E7%BE%8E%E3%82%89%E6%B5%B7%E6%B0%B4%E6%97%8F%E9%A4%A8/@26.694338,127.8079753,13z/data=!3m1!5s0x34e4fa331411ea83:0xa075f02c5f1d5747!4m9!1m2!2m1!1z576O44KJ5rW35rC05peP6aSo!3m5!1s0x34e4fa3152619e3d:0xea08a6700fdd9ffe!8m2!3d26.694338!4d127.8780131!15sChLnvo7jgonmtbfmsLTml4_ppKhaFyIV576OIOOCiSDmtbcg5rC05peP6aSokgEIYXF1YXJpdW2aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnZjSEZ0WlhoblJSQUI?hl=ja"
+  },
+  {
+    "id": 3,
+    "name": "沖縄県立博物館・美術館",
+    "describe": "沖縄県立博物館･美術館は、博物館と美術館をあわせ持つ、県内初の複合文化施設です。",
+    "url": "https://okimu.jp/",
+    "img": "article_img_okimu",
+    "map": "https://www.google.co.jp/maps/place/%E6%B2%96%E7%B8%84%E7%9C%8C%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%83%BB%E7%BE%8E%E8%A1%93%E9%A4%A8%EF%BC%88%E3%81%8A%E3%81%8D%E3%81%BF%E3%82%85%E3%83%BC%EF%BC%89/@26.2273138,127.6916602,17z/data=!3m2!4b1!5s0x34e56bd9bd51798b:0x732f0216580dd61a!4m5!3m4!1s0x34e56bd9978f13fb:0x5e2a5e5a6068c51f!8m2!3d26.2273138!4d127.6938489?hl=ja"
+  },
+  {
+    "id": 4,
+    "name": "玉泉洞",
+    "describe": "玉泉洞は、全長5000mの国内最大級の規模を誇る鍾乳洞です。",
+    "url": "https://www.gyokusendo.co.jp/okinawaworld/7recommendations/#feature1",
+    "img": "article_img_gyokusendo",
+    "map": "https://www.google.co.jp/maps/place/%E7%8E%89%E6%B3%89%E6%B4%9E/@26.1398567,127.7477284,17z/data=!4m9!1m2!2m1!1z546J5rOJ5rSe!3m5!1s0x34e56985519f786b:0x5e9a8bdcd64306dd!8m2!3d26.1403423!4d127.7494344!15sCgnnjonms4nmtJ5aDCIK546J5rOJIOa0npIBEnRvdXJpc3RfYXR0cmFjdGlvbg?hl=ja"
+  },
+  {
+    "id": 5,
+    "name": "平和記念公園",
+    "describe": "平和祈念公園は、沖縄戦最大の激戦地であり終焉地でもあります。園内には沖縄戦に関する様々な施設があります。",
+    "url": "https://heiwa-irei-okinawa.jp/",
+    "img": "article_img_heiwakinenpark",
+    "map": "https://www.google.co.jp/maps/place/%E5%B9%B3%E5%92%8C%E7%A5%88%E5%BF%B5%E5%85%AC%E5%9C%92/@26.0971903,127.7221078,17z/data=!4m9!1m2!2m1!1z5bmz5ZKM56WI5b-15YWs5ZyS!3m5!1s0x34e5667fc785a869:0x2f41622124eb7bff!8m2!3d26.0951187!4d127.7234728!15sChLlubPlkoznpYjlv7XlhazlnJJaFiIU5bmz5ZKMIOeliOW_tSDlhazlnJKSAQ1tZW1vcmlhbF9wYXJrmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVF5ZUVwaVlWVkJFQUU?hl=ja"
+  },
+  {
+    "id": 6,
+    "name": "ひめゆりの塔",
+    "describe": "ひめゆりの塔は、ひめゆり学徒隊の最後の地とされている伊原第三外科壕の上に建てられた慰霊碑です。",
+    "url": "",
+    "img": "aritcle_img_himeyuritower",
+    "map": "https://www.google.co.jp/maps/place/%E3%81%B2%E3%82%81%E3%82%86%E3%82%8A%E3%81%AE%E5%A1%94/@26.0964067,127.6885113,17z/data=!3m1!4b1!4m5!3m4!1s0x34e566fa5f0f078f:0xe5a0c69587a723ce!8m2!3d26.0964067!4d127.6907?hl=ja"
+  },
+  {
+    "id": 7,
+    "name": "トロピカルビーチ",
+    "describe": "トロピカルビーチは、外国人観光客を始め県内外から若い人が集まるビーチです。トロピーと呼ばれ、地元からも愛されています。",
+    "url": "http://www.ginowantropicalbeach.jp/",
+    "img": "article_img_toropikarubeach",
+    "map": "https://www.google.co.jp/maps/place/%E3%83%88%E3%83%AD%E3%83%94%E3%82%AB%E3%83%AB%E3%83%93%E3%83%BC%E3%83%81/@26.2814368,127.7230577,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56ca56f87675f:0x90efe07a51ab735d!8m2!3d26.2814375!4d127.7318125?hl=ja"
+  },
+  {
+    "id": 8,
+    "name": "美らSUNビーチ",
+    "describe": "美らSUNビーチは、全長700mある県内最大級の人工ビーチです。空港からも近い距離にあります。",
+    "url": "https://churasun-beach.com/",
+    "img": "article_img_churasunbeach",
+    "map": "https://www.google.co.jp/maps/place/%E8%B1%8A%E5%B4%8E%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92+%E3%82%AA%E3%83%AA%E3%82%AA%E3%83%B3ECO%E7%BE%8E%E3%82%89SUN%E3%83%93%E3%83%BC%E3%83%81/@26.1565481,127.6420586,16.22z/data=!4m5!3m4!1s0x34e5680792107e9d:0x88a506bbe5a7863e!8m2!3d26.1564375!4d127.6473125?hl=ja"
+  },
+  {
+    "id": 9,
+    "name": "識名園",
+    "describe": "識名園は、沖縄県那覇市真地にある琉球庭園の一つです。世界遺産にも登録されています。",
+    "url": "",
+    "img": "article_img_shikinaen",
+    "map": "https://www.google.co.jp/maps/place/%E8%AD%98%E5%90%8D%E5%9C%92/@26.2038547,127.7131392,17z/data=!3m1!4b1!4m5!3m4!1s0x34e5694fa4990145:0x95a7e826dc50e56b!8m2!3d26.2038547!4d127.7153279?hl=ja"
+  },
+  {
+    "id": 10,
+    "name": "玉陵",
+    "describe": "玉陵は、琉球王国、第二尚氏王統の歴代国王が葬られているお墓です。",
+    "url": "https://www.city.naha.okinawa.jp/kankou/bunkazai/tamaudun.html",
+    "img": "article_img_tamaudun",
+    "map": "https://www.google.co.jp/maps/place/%E7%8E%89%E9%99%B5/@26.2183166,127.7060143,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56bfd38e3952d:0x3b3d1223d5e3f94e!8m2!3d26.2183169!4d127.7147476?hl=ja"
+  },
+  {
+    "id": 11,
+    "name": "園比屋武御嶽",
+    "describe": "園比屋武御嶽は、16世紀の琉球王国･尚真王時代の祭祀などを行う施設です。",
+    "url": "",
+    "img": "article_img_sonohyanutaki",
+    "map": "https://www.google.co.jp/maps/place/%E5%9C%92%E6%AF%94%E5%B1%8B%E6%AD%A6%E5%BE%A1%E5%B6%BD%E7%9F%B3%E9%96%80/@26.2181066,127.7085871,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56bfdc62a0e2d:0xa7dd96588b2eecc9!8m2!3d26.2181018!4d127.7173198?hl=ja"
+  },
+  {
+    "id": 12,
+    "name": "弁ヶ岳公園",
+    "describe": "弁ヶ岳公園は、市が管理する公園で那覇市で最も高い場所です。\n首里城を見下ろすことができます。",
+    "url": "",
+    "img": "",
+    "map": "https://www.google.co.jp/maps/place/%E5%BC%81%E3%83%B6%E5%B2%B3%E5%85%AC%E5%9C%92/@26.2180693,127.7226323,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56c0465abf367:0x9a7d085d2bcec8df!8m2!3d26.2180696!4d127.7313656?hl=ja"
+  }
+]

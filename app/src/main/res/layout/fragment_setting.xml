@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingFragment">
+
+    <data>
+        <variable
+            name="settingFragment"
+            type="com.example.sotukenv2.ui.SettingFragment" />
+        <variable
+            name="viewModel"
+            type="com.example.sotukenv2.model.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_77">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:id="@+id/setting_title"
+            android:src="@drawable/header_title_settings"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:id="@+id/setting_text"
+            android:text="@string/setting_text"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/setting_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <!--        BGMの設定-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/setting_sound"
+            android:text="@string/setting_sound"
+            app:layout_constraintTop_toBottomOf="@id/setting_text"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--        バックサウンドスイッチ-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/sound_switch"
+            android:text="@string/sound_switch"
+            android:checked="@{viewModel.bgmFlag}"
+            android:background="@drawable/frame_style"
+            android:onClick="@{() -> settingFragment.switchBgm()}"
+            app:layout_constraintTop_toBottomOf="@id/setting_sound"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <!--        音声読み上げの設定-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/setting_guide"
+            android:text="@string/setting_guide"
+            app:layout_constraintTop_toBottomOf="@id/sound_switch"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--        歴史スイッチ-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/history_switch"
+            android:text="@string/history_switch"
+            android:background="@drawable/frame_style"
+            android:checked="@{viewModel.historyFlag}"
+            android:onClick="@{() -> viewModel.switchHistoryFlag()}"
+            app:layout_constraintTop_toBottomOf="@id/setting_guide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--        雑学スイッチ-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/trivia_switch"
+            android:text="@string/trivia_switch"
+            android:background="@drawable/frame_style"
+            android:checked="@{viewModel.triviaFlag}"
+            android:onClick="@{() -> viewModel.switchTriviaFlag()}"
+            app:layout_constraintTop_toBottomOf="@id/history_switch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--        飲食店スイッチ-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/restaurant_switch"
+            android:text="@string/restaurant_switch"
+            android:background="@drawable/frame_style"
+            android:checked="@{viewModel.restaurantFlag}"
+            android:onClick="@{() -> viewModel.switchRestaurantFlag()}"
+            app:layout_constraintTop_toBottomOf="@id/trivia_switch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--        観光スポットswitch-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/tourist_sight_switch"
+            android:text="@string/tourist_sight_switch"
+            android:background="@drawable/frame_style"
+            android:checked="@{viewModel.touristSightFlag}"
+            android:onClick="@{() -> viewModel.switchTouristSightFlag()}"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_switch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

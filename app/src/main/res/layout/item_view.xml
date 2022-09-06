@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white_77">
+
+    <!--    各アイテムのサムネイル画像-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:id="@+id/item_image"-->
+    <!--        android:contentDescription="@string/item_image_description"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/item_title"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:src="@drawable/article_img_shurijo" />-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/item_image"
+        android:contentDescription="@string/item_image_description"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/article_img_shurijo" />
+
+    <!--    お気に入り登録のボタン-->
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/favorite_button"
+        android:contentDescription="@string/favorite_button_description"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/not_favorite_button" />
+
+    <!--    各アイテムのタイトル-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/item_title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:background="@drawable/underbar"-->
+    <!--        android:textAlignment="center"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:text="首里城" />-->
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@drawable/underbar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintTop_toTopOf="@id/item_image"
+        tools:text="首里城" />
+
+    <!--    各アイテムの説明-->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:id="@+id/item_describe"
+        app:layout_constraintTop_toBottomOf="@id/item_title"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/item_page"
+        tools:text="首里城は、琉球王朝の王城で沖縄県内最大規模の城です。" />
+
+    <!--    各アイテムの紹介サイト-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/item_page"
+        android:text="@string/item_page"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintEnd_toStartOf="@id/item_map"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!--    各アイテムをマップで表示-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_map"
+        android:text="@string/item_map"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@id/item_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/item_page" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/underline"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
