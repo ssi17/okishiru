@@ -162,7 +162,7 @@ class MainViewModel : ViewModel() {
         val adapter = moshi.adapter(Article::class.java)
 
         for(i in 0 until flagList.size) {
-            if(flagList[i].flag) {
+            if(flagList[i].flag == 1) {
                 favoriteArticles.add(adapter.fromJson(articlesArray!!.getJSONObject(i).toString()) as Article)
             }
         }
@@ -176,7 +176,7 @@ class MainViewModel : ViewModel() {
     fun addFlag(id: Int) {
         val dao = db!!.favoriteDao()
         viewModelScope.launch {
-            dao.addFlag(Favorite(id, false))
+            dao.addFlag(Favorite(id, 0))
         }
     }
 
@@ -193,7 +193,12 @@ class MainViewModel : ViewModel() {
 
     // データベースのお気に入り登録状況を更新
     fun changeFavoriteFlag(id: Int) {
-        val flag = !flagList[id-1].flag
+        val flag =
+            if(flagList[id-1].flag == 0) {
+                1
+            } else {
+                0
+            }
         val dao = db!!.favoriteDao()
         viewModelScope.launch {
             dao.changeFlag(id, flag)

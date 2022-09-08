@@ -10,7 +10,7 @@ interface FavoriteDao {
     suspend fun getAll(): List<Favorite>
 
     @Query("UPDATE favorite SET flag = :flag WHERE id = :id")
-    suspend fun changeFlag(id: Int, flag: Boolean)
+    suspend fun changeFlag(id: Int, flag: Int)
 
     @Insert
     suspend fun addFlag(obj: Favorite)

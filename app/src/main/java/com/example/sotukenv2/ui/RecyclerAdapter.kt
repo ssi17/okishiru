@@ -32,7 +32,12 @@ class RecyclerAdapter(
         holder.favorites.setOnClickListener {
             val id = articles[position].id
             favoriteButton?.pushFavoriteButton(id)
-            flagList[id-1].flag = !flagList[id-1].flag
+            flagList[id-1].flag =
+                if(flagList[id-1].flag == 0) {
+                    1
+                } else {
+                    0
+                }
             setFavoriteButton(holder, id - 1)
         }
 
@@ -56,7 +61,7 @@ class RecyclerAdapter(
     }
 
     private fun setFavoriteButton(holder: ViewHolder, id: Int) {
-        if(flagList[id].flag) {
+        if(flagList[id].flag == 1) {
             holder.favorites.setImageResource(R.drawable.favorite_button)
         } else {
             holder.favorites.setImageResource(R.drawable.not_favorite_button)

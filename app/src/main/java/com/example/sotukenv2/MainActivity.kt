@@ -107,11 +107,10 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             applicationContext,
             AppDatabase::class.java,
             "app-database"
-        ).build()
+        )
+            .createFromAsset("app-database.db")
+            .build()
         sharedViewModel.db = db
-//        for(i in 1 until 13) {
-//            sharedViewModel.addFlag(i)
-//        }
         sharedViewModel.getAllFlag()
 
         val menuView = bottomNavigation.getChildAt(0) as BottomNavigationMenuView
