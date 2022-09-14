@@ -85,7 +85,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         // BGMの設定
         bgm = MediaPlayer.create(this, R.raw.bgm)
         bgm.isLooping = true    // ループ再生をON
-        bgm.start()             // BGMを再生
 
         // TextToSpeechの初期化
         tts = TextToSpeech(this, this)
@@ -117,31 +116,22 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         sharedViewModel.db = db
         sharedViewModel.getAllFlag()
 
-//        val menuView = bottomNavigation.getChildAt(0) as BottomNavigationMenuView
-//        val menuItem = menuView.getChildAt(2) as BottomNavigationItemView
-//
-//        menuItem.setOnClickListener {
-//            sharedViewModel.changeStartFlag()
-//            if(sharedViewModel.startFlag) {
-//                if(sharedViewModel.contents.size != 0) {
-//                    startSpeech()
-//                }
-//                menuItem.setIcon(this.getDrawable(R.drawable.stop_button))
-//            } else {
-//                onPause()
-//                menuItem.setIcon(this.getDrawable(R.drawable.play_button))
-//            }
-//        }
-
+        // FABで再生ボタンの処理を行う
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener {
             sharedViewModel.changeStartFlag()
             if(sharedViewModel.startFlag) {
+                if(sharedViewModel.bgmFlag.value!!) {
+                    bgm.start()
+                }
                 if(sharedViewModel.contents.size != 0) {
                     startSpeech()
                 }
                 fab.setImageResource(R.drawable.ic_pause)
             } else {
+                if(sharedViewModel.bgmFlag.value!!) {
+                    bgm.pause()
+                }
                 onPause()
                 fab.setImageResource(R.drawable.ic_play)
             }

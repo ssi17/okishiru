@@ -36,12 +36,14 @@ class SettingFragment: Fragment() {
 
     // BGMのON/OFF切り替え
     fun switchBgm() {
-        requireActivity().let {
-            if(it is MainActivity) {
-                if(binding!!.soundSwitch.isChecked) {
-                    it.bgm.start()
-                } else {
-                    it.bgm.pause()
+        if(sharedViewModel.startFlag) {
+            requireActivity().let {
+                if(it is MainActivity) {
+                    if(binding!!.soundSwitch.isChecked) {
+                        it.bgm.start()
+                    } else {
+                        it.bgm.pause()
+                    }
                 }
             }
         }
