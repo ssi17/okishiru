@@ -28,14 +28,6 @@ class AboutFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.aboutFragment = this
-
-        if(sharedViewModel.startFlag) {
-            requireActivity().let {
-                if(it is MainActivity) {
-                    it.setIcon()
-                }
-            }
-        }
     }
 
     override fun onDestroyView() {

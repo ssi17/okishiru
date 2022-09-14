@@ -44,14 +44,7 @@ class InformationFragment: Fragment() {
             setInformationTitle()
         }
 
-        if (sharedViewModel.startFlag) {
-            requireActivity().let {
-                if (it is MainActivity) {
-                    it.setIcon()
-                }
-            }
-        }
-
+        // 記事リストが更新されるタイミングで画面を更新
         sharedViewModel.displayArticles.observe(viewLifecycleOwner) { it ->
             setRecyclerView(it)
             if (it.size != 0) {

@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">sotuken v2</string>
 
+<!--    activity_main-->
+    <string name="fab">再生ボタン</string>
+
     <!--    fragment_information-->
     <string name="start_text">再生ボタンを押すと\n発信された情報がこちらに\n表示されます</string>
 

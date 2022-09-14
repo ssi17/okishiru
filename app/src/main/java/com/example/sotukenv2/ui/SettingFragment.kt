@@ -32,14 +32,6 @@ class SettingFragment: Fragment() {
             settingFragment = this@SettingFragment
             viewModel = sharedViewModel
         }
-
-        if(sharedViewModel.startFlag) {
-            requireActivity().let {
-                if(it is MainActivity) {
-                    it.setIcon()
-                }
-            }
-        }
     }
 
     // BGMのON/OFF切り替え

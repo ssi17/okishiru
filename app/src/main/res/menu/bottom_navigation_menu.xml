@@ -11,8 +11,7 @@
         android:title="設定" />
 
     <item
-        android:id="@+id/playButton"
-        android:icon="@drawable/play_button"
+        android:id="@+id/placeholder"
         android:title="" />
 
     <item

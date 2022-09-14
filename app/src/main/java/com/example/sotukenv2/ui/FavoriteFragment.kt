@@ -34,14 +34,6 @@ class FavoriteFragment: Fragment() {
 
         sharedViewModel.getFavoriteArticle()
         setRecyclerView()
-
-        if(sharedViewModel.startFlag) {
-            requireActivity().let {
-                if(it is MainActivity) {
-                    it.setIcon()
-                }
-            }
-        }
     }
 
     private fun setRecyclerView() {

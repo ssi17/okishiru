@@ -27,6 +27,7 @@ import com.google.android.gms.location.*
 import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.json.JSONArray
 import java.io.BufferedReader
 import java.io.InputStreamReader
@@ -78,6 +79,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         NavigationUI.setupWithNavController(bottomNavigation, navController)
 
+        bottomNavigation.background = null
+        bottomNavigation.menu.getItem(2).isEnabled = false
+
         // BGMの設定
         bgm = MediaPlayer.create(this, R.raw.bgm)
         bgm.isLooping = true    // ループ再生をON
@@ -113,36 +117,33 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         sharedViewModel.db = db
         sharedViewModel.getAllFlag()
 
-        val menuView = bottomNavigation.getChildAt(0) as BottomNavigationMenuView
-        val menuItem = menuView.getChildAt(2) as BottomNavigationItemView
-        // iconのサイズを設定
-//        0.until(menuView.childCount).forEach { index ->
-//            val icon = menuView.getChildAt(index).findViewById<ImageView>(com.google.android.material.R.id.icon)
-//            val displayMetrics = resources.displayMetrics
-//            val layoutParams = (icon.layoutParams).apply {
-//                when(index) {
-//                    2 -> {
-//                        width = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 36f, displayMetrics).toInt()
-//                        height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 36f, displayMetrics).toInt()
-//                    }
-//                    else -> {
-//                        width = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 24f, displayMetrics).toInt()
-//                        height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 24f, displayMetrics).toInt()
-//                    }
+//        val menuView = bottomNavigation.getChildAt(0) as BottomNavigationMenuView
+//        val menuItem = menuView.getChildAt(2) as BottomNavigationItemView
+//
+//        menuItem.setOnClickListener {
+//            sharedViewModel.changeStartFlag()
+//            if(sharedViewModel.startFlag) {
+//                if(sharedViewModel.contents.size != 0) {
+//                    startSpeech()
 //                }
+//                menuItem.setIcon(this.getDrawable(R.drawable.stop_button))
+//            } else {
+//                onPause()
+//                menuItem.setIcon(this.getDrawable(R.drawable.play_button))
 //            }
-//            icon.layoutParams = layoutParams
 //        }
-        menuItem.setOnClickListener {
+
+        val fab: FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener {
             sharedViewModel.changeStartFlag()
             if(sharedViewModel.startFlag) {
                 if(sharedViewModel.contents.size != 0) {
                     startSpeech()
                 }
-                menuItem.setIcon(this.getDrawable(R.drawable.stop_button))
+                fab.setImageResource(R.drawable.ic_pause)
             } else {
                 onPause()
-                menuItem.setIcon(this.getDrawable(R.drawable.play_button))
+                fab.setImageResource(R.drawable.ic_play)
             }
         }
 
@@ -254,15 +255,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     fun stopSpeech() {
         onPause()
-    }
-
-    @SuppressLint("RestrictedApi", "UseCompatLoadingForDrawables")
-    fun setIcon() {
-        val bottomNavigation: BottomNavigationView = findViewById(R.id.bottom_navigation)
-        val menuView = bottomNavigation.getChildAt(0) as BottomNavigationMenuView
-        val menuItem = menuView.getChildAt(2) as BottomNavigationItemView
-
-        menuItem.setIcon(resources.getDrawable(R.drawable.stop_button))
     }
 
     //緯度経度をもとに住所の取得
