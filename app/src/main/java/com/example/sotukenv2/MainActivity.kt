@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.os.Looper
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
+import android.util.Log
 import android.util.TypedValue
 import android.widget.ImageView
 import android.widget.Toast
@@ -188,7 +189,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
 
             override fun onError(id: String) {
-
             }
 
             override fun onStart(id: String) {
@@ -236,15 +236,12 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     override fun onPause() {
         super.onPause()
         tts.stop()
+        bgm.setVolume(1.0F, 1.0F)
     }
 
     override fun onDestroy() {
         super.onDestroy()
         tts.shutdown()
-    }
-
-    fun stopSpeech() {
-        onPause()
     }
 
     //緯度経度をもとに住所の取得
