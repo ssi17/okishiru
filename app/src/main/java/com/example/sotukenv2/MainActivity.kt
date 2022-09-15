@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private var requestingLocationUpdates: Boolean = false
 
+    var changeContents: Boolean = false
+
     //位置情報使用の権限許可を確認
     private val requestPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
@@ -176,9 +178,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val contents = sharedViewModel.contents
 
         val list: MutableList<Article> = sharedViewModel.displayArticles.value!!
-        if(list.size != 0) {
-            list.removeAt(0)
-        }
 
         tts.setOnUtteranceProgressListener(object: UtteranceProgressListener() {
             override fun onDone(id: String) {
@@ -186,6 +185,10 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 bgm.setVolume(1.0F, 1.0F)
                 // 読み上げが終わったコンテンツのリストを更新
                 sharedViewModel.doneContents.add(Integer.parseInt(id))
+                if(changeContents) {
+                    changeContents = false
+                    startSpeech()
+                }
             }
 
             override fun onError(id: String) {
@@ -199,7 +202,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                     if(content.id == Integer.parseInt(id)) {
                         for(article in articles) {
                             if(content.articleId.contains(article.id)) {
-                                list.add(0, article)
+                                if(list.size == 0 || list[0] != article) {
+                                    list.add(0, article)
+                                }
                             }
                         }
                         break
@@ -225,9 +230,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     override fun onInit(status: Int) {
         if(status == TextToSpeech.SUCCESS) {
             tts.let { tts ->
-                val locale = Locale.JAPAN
+                val locale = Locale.getDefault()
                 if(tts.isLanguageAvailable(locale) > TextToSpeech.LANG_AVAILABLE) {
-                    tts.language = Locale.JAPAN
+                    tts.language = locale
                 }
             }
         }
@@ -244,6 +249,10 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         tts.shutdown()
     }
 
+    fun ttsState(): Boolean {
+        return tts.isSpeaking
+    }
+
     //緯度経度をもとに住所の取得
     private fun getAddress(lat: Double, lng: Double) {
         val geocoder = Geocoder(this)
@@ -255,7 +264,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             sharedViewModel.city = city
             sharedViewModel.getContents()
             if(sharedViewModel.startFlag) {
-                startSpeech()
+                changeContents = true
             }
         }
     }

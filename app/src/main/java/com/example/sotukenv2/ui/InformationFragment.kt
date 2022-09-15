@@ -37,7 +37,7 @@ class InformationFragment: Fragment() {
 
         // 再生状態なら現在地をもとにコンテンツを取得
         // 再生状態でなければTopTitleを表示
-        if (sharedViewModel.displayArticles.value!!.size == 0 && !sharedViewModel.startFlag) {
+        if (sharedViewModel.displayArticles.value!!.size == 0 || !sharedViewModel.startFlag) {
             binding!!.topTitle.setImageResource(R.drawable.top_title)
             binding!!.startText.setText(R.string.start_text)
         } else {

@@ -50,9 +50,27 @@ class SettingFragment: Fragment() {
         sharedViewModel.switchBgmFlag()
     }
 
+    fun changeSetting(category: String) {
+        when(category) {
+            "history" -> sharedViewModel.switchHistoryFlag()
+            "trivia" -> sharedViewModel.switchTriviaFlag()
+            "restaurant" -> sharedViewModel.switchRestaurantFlag()
+            "tourist" -> sharedViewModel.switchTouristSightFlag()
+        }
+        sharedViewModel.getContents()
+        requireActivity().let {
+            if(it is MainActivity) {
+                if(!it.ttsState()) {
+                    it.startSpeech()
+                } else {
+                    it.changeContents = true
+                }
+            }
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
-        sharedViewModel.getContents()
         binding = null
     }
 }
