@@ -47,16 +47,33 @@ class RecyclerAdapter(
         // 説明を設定
         holder.describes.text = articles[position].describe
 
-        // ページへ
-        holder.pages.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(articles[position].url))
-            context.startActivity(intent)
+        // ウェブページのURLを取得
+        val pageUrl = articles[position].url
+        // URLが無ければ隠す
+        if(pageUrl == "") {
+            holder.pages.text = ""
+            holder.pages.isClickable = false
+        } else {
+            // ページへ
+            holder.pages.setOnClickListener {
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(pageUrl))
+                context.startActivity(intent)
+            }
         }
 
-        // マップを開く
-        holder.maps.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(articles[position].map))
-            context.startActivity(intent)
+
+        // マップのURLを取得
+        val mapUrl = articles[position].map
+        // URLが無ければ隠す
+        if(mapUrl == "") {
+            holder.maps.text = ""
+            holder.maps.isClickable = false
+        } else {
+            // マップを開く
+            holder.maps.setOnClickListener {
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(mapUrl))
+                context.startActivity(intent)
+            }
         }
     }
 

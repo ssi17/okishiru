@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         NavigationUI.setupWithNavController(bottomNavigation, navController)
 
+        // 下部ナビゲーションの設定
         bottomNavigation.background = null
         bottomNavigation.menu.getItem(2).isEnabled = false
 

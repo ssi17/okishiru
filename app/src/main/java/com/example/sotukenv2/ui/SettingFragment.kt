@@ -60,10 +60,12 @@ class SettingFragment: Fragment() {
         sharedViewModel.getContents()
         requireActivity().let {
             if(it is MainActivity) {
-                if(!it.ttsState()) {
-                    it.startSpeech()
-                } else {
-                    it.changeContents = true
+                if(sharedViewModel.startFlag) {
+                    if(!it.ttsState()) {
+                        it.startSpeech()
+                    } else {
+                        it.changeContents = true
+                    }
                 }
             }
         }
