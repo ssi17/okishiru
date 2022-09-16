@@ -125,13 +125,13 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         fab.setOnClickListener {
             sharedViewModel.changeStartFlag()
             if(sharedViewModel.startFlag) {
+                fab.setImageResource(R.drawable.ic_pause)
                 if(sharedViewModel.bgmFlag.value!!) {
                     bgm.start()
                 }
                 if(sharedViewModel.contents.size != 0) {
                     startSpeech()
                 }
-                fab.setImageResource(R.drawable.ic_pause)
             } else {
                 if(sharedViewModel.bgmFlag.value!!) {
                     bgm.pause()
