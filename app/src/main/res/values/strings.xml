@@ -25,4 +25,12 @@
 
     <string name="item_page">≫ページへ</string>
     <string name="item_map">≫マップを開く</string>
+
+<!--    fragment_about-->
+    <string name="about_home_title">ホーム画面</string>
+    <string name="about_guide_title">ガイド画面</string>
+    <string name="about_setting_title">設定画面</string>
+    <string name="about_favorite_title">お気に入り画面</string>
+    <string name="about_inquiry_title">お問い合わせ</string>
+    <string name="about_inquiry_text">あいうえお\nかきくけこ\nさしすせそ</string>
 </resources>

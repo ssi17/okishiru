@@ -3,26 +3,192 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".OperationFragment">
+    tools:context=".AboutFragment">
 
     <data>
         <variable
             name="aboutFragment"
-            type="com.example.sotukenv2.ui.AboutFragment" />
+            type="com.example.sotukenv2.ui.fragment.AboutFragment" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <ImageView
-            android:layout_width="0dp"
+            android:id="@+id/aboutTitle"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:id="@+id/operation_text"
-            android:src="@drawable/header_title_about"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:src="@drawable/header_title_about" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/aboutTitle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent">
+
+                    <!--ホーム画面-->
+                    <TextView
+                        android:id="@+id/homeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_home_title"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/homeImage"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:background="@color/white_77"
+                        android:src="@drawable/about_home_img"
+                        app:layout_constraintEnd_toStartOf="@id/homeText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/homeTitle" />
+
+                    <ImageView
+                        android:id="@+id/homeText"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:background="@color/white_77"
+                        android:src="@drawable/about_home_text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/homeImage"
+                        app:layout_constraintTop_toTopOf="@id/homeImage" />
+
+                    <!--ガイド画面-->
+                    <TextView
+                        android:id="@+id/guideTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/about_guide_title"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/homeImage" />
+
+                    <ImageView
+                        android:id="@+id/guideImage"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:background="@color/white_77"
+                        android:src="@drawable/about_guide_img"
+                        app:layout_constraintEnd_toStartOf="@id/guideText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/guideTitle" />
+
+                    <ImageView
+                        android:id="@+id/guideText"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:background="@color/white_77"
+                        android:src="@drawable/about_guide_text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/guideImage"
+                        app:layout_constraintTop_toTopOf="@id/guideImage" />
+
+                    <!--設定画面-->
+                    <TextView
+                        android:id="@+id/settingTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/about_setting_title"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/guideImage" />
+
+                    <ImageView
+                        android:id="@+id/settingImage"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:background="@color/white_77"
+                        android:src="@drawable/about_setting_img"
+                        app:layout_constraintEnd_toStartOf="@id/settingText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/settingTitle" />
+
+                    <ImageView
+                        android:id="@+id/settingText"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:background="@color/white_77"
+                        android:src="@drawable/about_setting_text2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/settingImage"
+                        app:layout_constraintTop_toTopOf="@id/settingImage" />
+
+                    <!--お気に入り画面-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/favoriteTitle"
+                        android:text="@string/about_favorite_title"
+                        android:textSize="20sp"
+                        app:layout_constraintTop_toBottomOf="@id/settingImage"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/favoriteImage"
+                        android:src="@drawable/about_favorite_img"
+                        android:background="@color/white_77"
+                        app:layout_constraintTop_toBottomOf="@id/favoriteTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/favoriteText" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/favoriteText"
+                        android:src="@drawable/about_favorite_text"
+                        android:background="@color/white_77"
+                        app:layout_constraintTop_toTopOf="@id/favoriteImage"
+                        app:layout_constraintStart_toEndOf="@id/favoriteImage"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="16dp"
+                        android:id="@+id/inquiryTitle"
+                        android:text="@string/about_inquiry_title"
+                        android:textSize="20sp"
+                        app:layout_constraintTop_toBottomOf="@id/favoriteImage"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/inquiryText"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/inquiryText"
+                        android:text="@string/about_inquiry_text"
+                        app:layout_constraintTop_toBottomOf="@id/inquiryTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

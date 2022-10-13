@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "name": "首里城",
-    "describe": "首里城は、琉球王朝の王城で沖縄県内最大規模の城です。",
-    "url": "https://oki-park.jp/shurijo/about/",
-    "img": "article_img_shurijo",
-    "map": "https://www.google.co.jp/maps/place/%E9%A6%96%E9%87%8C%E5%9F%8E%E5%85%AC%E5%9C%92/@26.2170449,127.7172946,17z/data=!3m1!4b1!4m5!3m4!1s0x34e56bfe6cf4db67:0xc0899fbab29e4f8b!8m2!3d26.2170449!4d127.7194833?hl=ja"
+    "name": "沖縄こどもの国",
+    "describe": "沖縄こどもの国は、動物園などの施設があり、県内でも有数の教育普及施設です。",
+    "url": "https://www.okzm.jp/",
+    "img": "okzm",
+    "map": "https://goo.gl/maps/foVbm2qeKrt5mav68"
   },
   {
     "id": 2,
-    "name": "美ら海水族館",
-    "describe": "美ら海水族館は、海洋博公園にある人気スポットです。",
-    "url": "https://churaumi.okinawa/",
-    "img": "article_img_churaumi",
-    "map": "https://www.google.co.jp/maps/place/%E6%B2%96%E7%B8%84%E7%BE%8E%E3%82%89%E6%B5%B7%E6%B0%B4%E6%97%8F%E9%A4%A8/@26.694338,127.8079753,13z/data=!3m1!5s0x34e4fa331411ea83:0xa075f02c5f1d5747!4m9!1m2!2m1!1z576O44KJ5rW35rC05peP6aSo!3m5!1s0x34e4fa3152619e3d:0xea08a6700fdd9ffe!8m2!3d26.694338!4d127.8780131!15sChLnvo7jgonmtbfmsLTml4_ppKhaFyIV576OIOOCiSDmtbcg5rC05peP6aSokgEIYXF1YXJpdW2aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnZjSEZ0WlhoblJSQUI?hl=ja"
+    "name": "トロピカルビーチ",
+    "describe": "トロピカルビーチは、外国人観光客を始め県内外から若い人が集まるビーチです。トロピーと呼ばれ、地元からも愛されています。",
+    "url": "http://www.ginowantropicalbeach.jp/",
+    "img": "toropikarubeach",
+    "map": "https://www.google.co.jp/maps/place/%E3%83%88%E3%83%AD%E3%83%94%E3%82%AB%E3%83%AB%E3%83%93%E3%83%BC%E3%83%81/@26.2814368,127.7230577,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56ca56f87675f:0x90efe07a51ab735d!8m2!3d26.2814375!4d127.7318125?hl=ja"
   },
   {
     "id": 3,
-    "name": "沖縄県立博物館・美術館",
-    "describe": "沖縄県立博物館･美術館は、博物館と美術館をあわせ持つ、県内初の複合文化施設です。",
-    "url": "https://okimu.jp/",
-    "img": "article_img_okimu",
-    "map": "https://www.google.co.jp/maps/place/%E6%B2%96%E7%B8%84%E7%9C%8C%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%83%BB%E7%BE%8E%E8%A1%93%E9%A4%A8%EF%BC%88%E3%81%8A%E3%81%8D%E3%81%BF%E3%82%85%E3%83%BC%EF%BC%89/@26.2273138,127.6916602,17z/data=!3m2!4b1!5s0x34e56bd9bd51798b:0x732f0216580dd61a!4m5!3m4!1s0x34e56bd9978f13fb:0x5e2a5e5a6068c51f!8m2!3d26.2273138!4d127.6938489?hl=ja"
+    "name": "森の川",
+    "describe": "森の川は、沖縄県宜野湾市真志喜の森川公園内にある湧き水です。",
+    "url": "",
+    "img": "morinokawa",
+    "map": "https://goo.gl/maps/Bt8dyokx1MUAag4z8"
   },
   {
     "id": 4,
-    "name": "玉泉洞",
-    "describe": "玉泉洞は、全長5000mの国内最大級の規模を誇る鍾乳洞です。",
-    "url": "https://www.gyokusendo.co.jp/okinawaworld/7recommendations/#feature1",
-    "img": "article_img_gyokusendo",
-    "map": "https://www.google.co.jp/maps/place/%E7%8E%89%E6%B3%89%E6%B4%9E/@26.1398567,127.7477284,17z/data=!4m9!1m2!2m1!1z546J5rOJ5rSe!3m5!1s0x34e56985519f786b:0x5e9a8bdcd64306dd!8m2!3d26.1403423!4d127.7494344!15sCgnnjonms4nmtJ5aDCIK546J5rOJIOa0npIBEnRvdXJpc3RfYXR0cmFjdGlvbg?hl=ja"
+    "name": "宜野湾市",
+    "describe": "宜野湾市は、沖縄本島中南部の中央に位置する、沖縄県で５番目に人口が多い都市です。",
+    "url": "https://www.city.ginowan.lg.jp/",
+    "img": "",
+    "map": "https://goo.gl/maps/p4sQeYFJ7RsL1pCs9"
   },
   {
     "id": 5,
     "name": "平和記念公園",
     "describe": "平和祈念公園は、沖縄戦最大の激戦地であり終焉地でもあります。園内には沖縄戦に関する様々な施設があります。",
     "url": "https://heiwa-irei-okinawa.jp/",
-    "img": "article_img_heiwakinenpark",
+    "img": "heiwakinenpark",
     "map": "https://www.google.co.jp/maps/place/%E5%B9%B3%E5%92%8C%E7%A5%88%E5%BF%B5%E5%85%AC%E5%9C%92/@26.0971903,127.7221078,17z/data=!4m9!1m2!2m1!1z5bmz5ZKM56WI5b-15YWs5ZyS!3m5!1s0x34e5667fc785a869:0x2f41622124eb7bff!8m2!3d26.0951187!4d127.7234728!15sChLlubPlkoznpYjlv7XlhazlnJJaFiIU5bmz5ZKMIOeliOW_tSDlhazlnJKSAQ1tZW1vcmlhbF9wYXJrmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVF5ZUVwaVlWVkJFQUU?hl=ja"
   },
   {
@@ -44,31 +44,31 @@
     "name": "ひめゆりの塔",
     "describe": "ひめゆりの塔は、ひめゆり学徒隊の最後の地とされている伊原第三外科壕の上に建てられた慰霊碑です。",
     "url": "",
-    "img": "aritcle_img_himeyuritower",
+    "img": "himeyuritower",
     "map": "https://www.google.co.jp/maps/place/%E3%81%B2%E3%82%81%E3%82%86%E3%82%8A%E3%81%AE%E5%A1%94/@26.0964067,127.6885113,17z/data=!3m1!4b1!4m5!3m4!1s0x34e566fa5f0f078f:0xe5a0c69587a723ce!8m2!3d26.0964067!4d127.6907?hl=ja"
   },
   {
     "id": 7,
-    "name": "トロピカルビーチ",
-    "describe": "トロピカルビーチは、外国人観光客を始め県内外から若い人が集まるビーチです。トロピーと呼ばれ、地元からも愛されています。",
-    "url": "http://www.ginowantropicalbeach.jp/",
-    "img": "article_img_toropikarubeach",
-    "map": "https://www.google.co.jp/maps/place/%E3%83%88%E3%83%AD%E3%83%94%E3%82%AB%E3%83%AB%E3%83%93%E3%83%BC%E3%83%81/@26.2814368,127.7230577,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56ca56f87675f:0x90efe07a51ab735d!8m2!3d26.2814375!4d127.7318125?hl=ja"
+    "name": "首里城",
+    "describe": "首里城は、琉球王朝の王城で沖縄県内最大規模の城です。",
+    "url": "https://oki-park.jp/shurijo/about/",
+    "img": "shurijo",
+    "map": "https://www.google.co.jp/maps/place/%E9%A6%96%E9%87%8C%E5%9F%8E%E5%85%AC%E5%9C%92/@26.2170449,127.7172946,17z/data=!3m1!4b1!4m5!3m4!1s0x34e56bfe6cf4db67:0xc0899fbab29e4f8b!8m2!3d26.2170449!4d127.7194833?hl=ja"
   },
   {
     "id": 8,
-    "name": "美らSUNビーチ",
-    "describe": "美らSUNビーチは、全長700mある県内最大級の人工ビーチです。空港からも近い距離にあります。",
-    "url": "https://churasun-beach.com/",
-    "img": "article_img_churasunbeach",
-    "map": "https://www.google.co.jp/maps/place/%E8%B1%8A%E5%B4%8E%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92+%E3%82%AA%E3%83%AA%E3%82%AA%E3%83%B3ECO%E7%BE%8E%E3%82%89SUN%E3%83%93%E3%83%BC%E3%83%81/@26.1565481,127.6420586,16.22z/data=!4m5!3m4!1s0x34e5680792107e9d:0x88a506bbe5a7863e!8m2!3d26.1564375!4d127.6473125?hl=ja"
+    "name": "沖縄県立博物館・美術館",
+    "describe": "沖縄県立博物館･美術館は、博物館と美術館をあわせ持つ、県内初の複合文化施設です。",
+    "url": "https://okimu.jp/",
+    "img": "okimu",
+    "map": "https://www.google.co.jp/maps/place/%E6%B2%96%E7%B8%84%E7%9C%8C%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%83%BB%E7%BE%8E%E8%A1%93%E9%A4%A8%EF%BC%88%E3%81%8A%E3%81%8D%E3%81%BF%E3%82%85%E3%83%BC%EF%BC%89/@26.2273138,127.6916602,17z/data=!3m2!4b1!5s0x34e56bd9bd51798b:0x732f0216580dd61a!4m5!3m4!1s0x34e56bd9978f13fb:0x5e2a5e5a6068c51f!8m2!3d26.2273138!4d127.6938489?hl=ja"
   },
   {
     "id": 9,
     "name": "識名園",
     "describe": "識名園は、沖縄県那覇市真地にある琉球庭園の一つです。世界遺産にも登録されています。",
     "url": "",
-    "img": "article_img_shikinaen",
+    "img": "shikinaen",
     "map": "https://www.google.co.jp/maps/place/%E8%AD%98%E5%90%8D%E5%9C%92/@26.2038547,127.7131392,17z/data=!3m1!4b1!4m5!3m4!1s0x34e5694fa4990145:0x95a7e826dc50e56b!8m2!3d26.2038547!4d127.7153279?hl=ja"
   },
   {
@@ -76,7 +76,7 @@
     "name": "玉陵",
     "describe": "玉陵は、琉球王国、第二尚氏王統の歴代国王が葬られているお墓です。",
     "url": "https://www.city.naha.okinawa.jp/kankou/bunkazai/tamaudun.html",
-    "img": "article_img_tamaudun",
+    "img": "tamaudun",
     "map": "https://www.google.co.jp/maps/place/%E7%8E%89%E9%99%B5/@26.2183166,127.7060143,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56bfd38e3952d:0x3b3d1223d5e3f94e!8m2!3d26.2183169!4d127.7147476?hl=ja"
   },
   {
@@ -84,7 +84,7 @@
     "name": "園比屋武御嶽",
     "describe": "園比屋武御嶽は、16世紀の琉球王国･尚真王時代の祭祀などを行う施設です。",
     "url": "",
-    "img": "article_img_sonohyanutaki",
+    "img": "sonohyanutaki",
     "map": "https://www.google.co.jp/maps/place/%E5%9C%92%E6%AF%94%E5%B1%8B%E6%AD%A6%E5%BE%A1%E5%B6%BD%E7%9F%B3%E9%96%80/@26.2181066,127.7085871,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56bfdc62a0e2d:0xa7dd96588b2eecc9!8m2!3d26.2181018!4d127.7173198?hl=ja"
   },
   {
@@ -92,7 +92,247 @@
     "name": "弁ヶ岳公園",
     "describe": "弁ヶ岳公園は、市が管理する公園で那覇市で最も高い場所です。\n首里城を見下ろすことができます。",
     "url": "",
-    "img": "article_no_image",
+    "img": "image",
     "map": "https://www.google.co.jp/maps/place/%E5%BC%81%E3%83%B6%E5%B2%B3%E5%85%AC%E5%9C%92/@26.2180693,127.7226323,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56c0465abf367:0x9a7d085d2bcec8df!8m2!3d26.2180696!4d127.7313656?hl=ja"
+  },
+  {
+    "id": 13,
+    "name": "国際通り",
+    "describe": "国際通りは、沖縄県で最も賑やかな通りで、那覇市最大の繁華街です。",
+    "url": "https://naha-kokusaidori.okinawa/",
+    "img": "kokusaidori",
+    "map": "https://goo.gl/maps/wXx9sibyfzetXARF9"
+  },
+  {
+    "id": 14,
+    "name": "那覇市",
+    "describe": "那覇市は、沖縄県の県庁所在地で、政治・経済・文化の中心を担っています。",
+    "url": "https://www.city.naha.okinawa.jp/",
+    "img": "naha",
+    "map": "https://goo.gl/maps/Kfquv5pRq1PjMGPR7"
+  },
+  {
+    "id": 15,
+    "name": "玉泉洞",
+    "describe": "玉泉洞は、全長5000mの国内最大級の規模を誇る鍾乳洞です。",
+    "url": "https://www.gyokusendo.co.jp/okinawaworld/7recommendations/#feature1",
+    "img": "gyokusendo",
+    "map": "https://www.google.co.jp/maps/place/%E7%8E%89%E6%B3%89%E6%B4%9E/@26.1398567,127.7477284,17z/data=!4m9!1m2!2m1!1z546J5rOJ5rSe!3m5!1s0x34e56985519f786b:0x5e9a8bdcd64306dd!8m2!3d26.1403423!4d127.7494344!15sCgnnjonms4nmtJ5aDCIK546J5rOJIOa0npIBEnRvdXJpc3RfYXR0cmFjdGlvbg?hl=ja"
+  },
+  {
+    "id": 16,
+    "name": "斎場御嶽",
+    "describe": "斎場御嶽は、琉球の最高神女であった聞得大君の就任の儀式が執り行わられ、国の吉凶を占う儀式が行われた琉球王国の聖地です。",
+    "url": "https://okinawa-nanjo.jp/sefa/",
+    "img": "sefa",
+    "map": "https://goo.gl/maps/qa6ze2o9FioWDMeL8"
+  },
+  {
+    "id": 17,
+    "name": "美らSUNビーチ",
+    "describe": "美らSUNビーチは、全長700mある県内最大級の人工ビーチです。空港からも近い距離にあります。",
+    "url": "https://churasun-beach.com/",
+    "img": "churasunbeach",
+    "map": "https://www.google.co.jp/maps/place/%E8%B1%8A%E5%B4%8E%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92+%E3%82%AA%E3%83%AA%E3%82%AA%E3%83%B3ECO%E7%BE%8E%E3%82%89SUN%E3%83%93%E3%83%BC%E3%83%81/@26.1565481,127.6420586,16.22z/data=!4m5!3m4!1s0x34e5680792107e9d:0x88a506bbe5a7863e!8m2!3d26.1564375!4d127.6473125?hl=ja"
+  },
+  {
+    "id": 18,
+    "name": "DMMかりゆし水族館",
+    "describe": "DMMかりゆし水族館は、最新の映像表現と空間演出を駆使した、新しいカタチのエンタテインメント水族館です。",
+    "url": "https://kariyushi-aquarium.com/",
+    "img": "kariyushiaquarium",
+    "map": "https://goo.gl/maps/8sv4u1699Pw2eFk6A"
+  },
+  {
+    "id": 19,
+    "name": "沖縄美ら海水族館",
+    "describe": "沖縄美ら海水族館は、海洋博公園にある人気スポットです。",
+    "url": "https://churaumi.okinawa/",
+    "img": "churaumi",
+    "map": "https://www.google.co.jp/maps/place/%E6%B2%96%E7%B8%84%E7%BE%8E%E3%82%89%E6%B5%B7%E6%B0%B4%E6%97%8F%E9%A4%A8/@26.694338,127.8079753,13z/data=!3m1!5s0x34e4fa331411ea83:0xa075f02c5f1d5747!4m9!1m2!2m1!1z576O44KJ5rW35rC05peP6aSo!3m5!1s0x34e4fa3152619e3d:0xea08a6700fdd9ffe!8m2!3d26.694338!4d127.8780131!15sChLnvo7jgonmtbfmsLTml4_ppKhaFyIV576OIOOCiSDmtbcg5rC05peP6aSokgEIYXF1YXJpdW2aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnZjSEZ0WlhoblJSQUI?hl=ja"
+  },
+  {
+    "id": 20,
+    "name": "志魯・布里の乱",
+    "describe": "志魯･布里の乱は、琉球王国第６代の王位をめぐって起こった争いです。",
+    "url": "",
+    "img": "image",
+    "map": ""
+  },
+  {
+    "id": 21,
+    "name": "護佐丸・阿麻和利の乱",
+    "describe": "護佐丸･阿麻和利の乱は、1458年に尚泰久王の時代に起きた内乱のことです。",
+    "url": "",
+    "img": "image",
+    "map": ""
+  },
+  {
+    "id": 22,
+    "name": "オヤケアカハチの乱",
+    "describe": "オヤケアカハチの乱は、1500年にオヤケアカハチと、琉球王国との間で行われた戦争です。",
+    "url": "",
+    "img": "image",
+    "map": ""
+  },
+  {
+    "id": 23,
+    "name": "琉球王国成立",
+    "describe": "1429年、第一尚氏王統の尚巴志王の三山統一によって琉球王国が成立しました。",
+    "url": "",
+    "img": "image",
+    "map": ""
+  },
+  {
+    "id": 24,
+    "name": "コザ銀天街",
+    "describe": "沖縄市照屋のコザ十字路そばにある有名な商店街です。",
+    "url": "https://nakamako.info/gintengai/",
+    "img": "gintengai",
+    "map": "https://goo.gl/maps/jh3nKPqm7V8oqiYv5"
+  },
+  {
+    "id": 25,
+    "name": "一番街、ゲート通り",
+    "describe": "一番街は、1975年に沖縄で初めてアーケード化した商店街です。コザゲート通りはその名の通り、米軍基地のゲート（出入り口）を起点とする通りです。",
+    "url": "https://www.kozaweb.jp/featurePages/show/45",
+    "img": "image",
+    "map": "https://goo.gl/maps/fSBskrB1cJGaFoEN8"
+  },
+  {
+    "id": 26,
+    "name": "東南植物楽園",
+    "describe": "東南植物楽園は沖縄県にある南国特有の植物を多く集めた植物園です。",
+    "url": "https://www.southeast-botanical.jp/",
+    "img": "southeastbotanical",
+    "map": "https://g.page/southeast-botanical-jp?share"
+  },
+  {
+    "id": 27,
+    "name": "音市場(ミュージックタウン)",
+    "describe": "音市場は、「音楽のまち」としてしられる沖縄市の中核施設として2007年にオープンした、複合型音楽施設です。",
+    "url": "https://www.otoichiba.jp/",
+    "img": "otoichiba",
+    "map": "https://goo.gl/maps/8ubNZXtbjXMQEvVy5"
+  },
+  {
+    "id": 28,
+    "name": "アメリカンビレッジ",
+    "describe": "アメリカンビレッジは、沖縄県北谷町美浜にあるリゾート地区。アメリカの雰囲気を模したグルメ巡りや、エンターテイメントエリア、ショッピングなどが楽しめます。",
+    "url": "https://www.okinawa-americanvillage.com/",
+    "img": "americanvillage",
+    "map": "https://goo.gl/maps/p3McWu9iHc8HZGnb7"
+  },
+  {
+    "id": 29,
+    "name": "久高島",
+    "describe": "久高島は、琉球創世神・アマミキヨが降りたったといわれ、島全体が神聖な地とされていることから「神の島」と呼ばれています。 ",
+    "url": "https://kudaka-island.com/",
+    "img": "kudakajima",
+    "map": "https://goo.gl/maps/gJZhtvGZo2vYUzxv6"
+  },
+  {
+    "id": 30,
+    "name": "琉球村",
+    "describe": "琉球村は、沖縄県国頭郡恩納村山田にある、沖縄の文化・自然などをテーマとしたテーマパーク。多くの古民家が移築されており、やや昔の伝統的な沖縄の村が再現されています。",
+    "url": "https://www.ryukyumura.co.jp/",
+    "img": "ryukyumura",
+    "map": "https://g.page/Ryukyumura?share"
+  },
+  {
+    "id": 31,
+    "name": "ニライカナイ橋",
+    "describe": "南城市のニライカナイ橋はニライ橋とカナイ橋が合わさりニライカナイ橋といい、展望台から見る景色はとても眺めが良く近くをドライブした際には、ぜひ通ってみてください。",
+    "url": "https://www.kankou-nanjo.okinawa/bunka/details/171",
+    "img": "niraikanai",
+    "map": "https://goo.gl/maps/uy47BpDk9VXg1LB4A"
+  },
+  {
+    "id": 32,
+    "name": "ビオスの丘",
+    "describe": "ビオスの丘は、らんの花と亜熱帯沖縄の自然がテーマのテーマパークです。また、園内を散策できる水牛車やジャングルクルーズはとても人気です。",
+    "url": "https://www.bios-hill.co.jp/",
+    "img": "bios",
+    "map": "https://g.page/bios-no-oka?share"
+  },
+  {
+    "id": 33,
+    "name": "勝連城跡",
+    "describe": "勝連城跡は12～13世紀に築城されたと考えられており、阿麻和利が居城したとして有名です。",
+    "url": "https://www.katsuren-jo.jp/",
+    "img": "katsurenjo",
+    "map": "https://goo.gl/maps/uu3bJz7YakoN2i7b9"
+  },
+  {
+    "id": 34,
+    "name": "伊計島",
+    "describe": "伊計島は、沖縄県うるま市に属する島で、沖縄本島中部の東部海岸に突出する勝連半島の北東約10kmに位置します。",
+    "url": "https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%A8%88%E5%B3%B6",
+    "img": "ikei",
+    "map": "https://goo.gl/maps/fGLMtiDGi6Uz4nmA6"
+  },
+  {
+    "id": 35,
+    "name": "やんばる学びの森",
+    "describe": "オートキャンプ場、アスレチック広場、鬼太郎ハウスなどがあり、自然体験や野外活動を中心に、子供から大人まで幅広く楽しむことができる場所です。",
+    "url": "https://yanbaru-manabi.com/",
+    "img": "image",
+    "map": "https://goo.gl/maps/v42EqBNG8crLAiGq8"
+  },
+  {
+    "id": 36,
+    "name": "備瀬のフクギ並木",
+    "describe": "備瀬のフクギ並木は、防風林として家を取り囲むように植えられたフクギが連なり、備瀬崎までのおよそ1kmの並木道になっています。本部町のパワースポットとしても知られています。",
+    "url": "https://www.motobu-ka.com/tourist_info/tourist_info-post-687/",
+    "img": "fukuginamiki",
+    "map": "https://goo.gl/maps/cAL9CrdaTYEBNmfn8"
+  },
+  {
+    "id": 37,
+    "name": "本部町立博物館",
+    "describe": "沖縄島北部にある本部町の総合博物館です。1982年の開館以来、本部町の歴史・民俗と自然をテーマとした常設展示を行っています。",
+    "url": "http://motosyohaku.wp.xdomain.jp/",
+    "img": "image",
+    "map": "https://goo.gl/maps/RbydQT88hZhjwZXM6"
+  },
+  {
+    "id": 38,
+    "name": "八重岳桜の森公園",
+    "describe": "八重岳桜の森公園は、1月～2月上旬に約7000本の桜が咲き誇る八重岳の中腹に位置する公園です。日本一の早咲きをキャッチフレーズに、濃いピンク色のカンヒザクラが訪れた人達を楽しませてくれます。",
+    "url": "https://www.town.motobu.okinawa.jp/shisetu/kouen",
+    "img": "sakuranomoripark",
+    "map": "https://goo.gl/maps/KnNk7ECEoew74F1V9"
+  },
+  {
+    "id": 39,
+    "name": "瀬戸大橋、瀬底島",
+    "describe": "瀬底大橋は、沖縄本島の北部にある本部半島と瀬底島とを結ぶ全長726メートルの橋です。",
+    "url": "http://motobu-m.town.motobu.okinawa.jp/column/culturalproperty/sesokoohhashi",
+    "img": "sesokoohhashi",
+    "map": "https://goo.gl/maps/3VSexTTWo9g5xJum8"
+  },
+  {
+    "id": 40,
+    "name": "山里の円錐カルスト",
+    "describe": "沖縄本島の本部半島にある沖縄県本部町の山里地区は日本で唯一の円錐カルスト地形のあるエリアです。",
+    "url": "https://www.motobu-ka.com/tourist_info/tourist_info-post-684/",
+    "img": "conicalkarst",
+    "map": "https://goo.gl/maps/ULK81HzCrp6nSBnK6"
+  },
+  {
+    "id": 41,
+    "name": "水納島",
+    "describe": "水納島は、上空から眺めると、三日月形をしており、その形からクロワッサンアイランドとも呼ばれています。",
+    "url": "https://www.motobu-ka.com/tourist_info/tourist_info-post-690/",
+    "img": "minnajima",
+    "map": "https://goo.gl/maps/SipXkyMmAPMjc3uM8"
+  },
+  {
+    "id": 42,
+    "name": "伊江島",
+    "describe": "伊江島は、本部港からフェリーで30分あまり気軽に行ける離島。伊江島タッチュー(イータッチュー)の愛称で親しまれています。",
+    "url": "https://iejima.okinawa/",
+    "img": "image",
+    "map": "https://goo.gl/maps/9jgrCXb8TkWHoA2A7"
   }
 ]

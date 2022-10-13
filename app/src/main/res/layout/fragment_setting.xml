@@ -8,7 +8,7 @@
     <data>
         <variable
             name="settingFragment"
-            type="com.example.sotukenv2.ui.SettingFragment" />
+            type="com.example.sotukenv2.ui.fragment.SettingFragment" />
         <variable
             name="viewModel"
             type="com.example.sotukenv2.model.MainViewModel" />

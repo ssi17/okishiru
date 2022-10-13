@@ -33,6 +33,7 @@ import org.json.JSONArray
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.util.*
+import kotlin.collections.ArrayDeque
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
@@ -200,11 +201,20 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 bgm.setVolume(0.1F, 0.1F)
                 // 読み上げられているコンテンツの記事を記事リストから取得
                 for(content in contents) {
+                    // 読み上げているコンテンツを探索
                     if(content.id == Integer.parseInt(id)) {
                         for(article in articles) {
+                            // 記事リストの中からこのコンテンツに関する記事を探索
                             if(content.articleId.contains(article.id)) {
-                                if(list.size == 0 || list[0] != article) {
-                                    list.add(0, article)
+                                // すでに同じ記事が表示されていればリストから削除
+                                if(list.contains(article)) {
+                                    list.remove(article)
+                                }
+                                // リストに記事を追加
+                                list.add(0, article)
+                                // リストのサイズが10を超えていたら最後の要素を削除
+                                if(list.size > 10) {
+                                    list.removeAt(10)
                                 }
                             }
                         }

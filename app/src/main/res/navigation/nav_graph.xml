@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/informationFragment"
-        android:name="com.example.sotukenv2.ui.InformationFragment"
+        android:name="com.example.sotukenv2.ui.fragment.InformationFragment"
         android:label="Information"
         tools:layout="@layout/fragment_information" />
 
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.example.sotukenv2.ui.SettingFragment"
+        android:name="com.example.sotukenv2.ui.fragment.SettingFragment"
         android:label="SettingFragment"
         tools:layout="@layout/fragment_setting" />
 
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="com.example.sotukenv2.ui.FavoriteFragment"
+        android:name="com.example.sotukenv2.ui.fragment.FavoriteFragment"
         android:label="FavoriteFragment"
         tools:layout="@layout/fragment_favorite" />
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.sotukenv2.ui.AboutFragment"
+        android:name="com.example.sotukenv2.ui.fragment.AboutFragment"
         android:label="aboutFragment"
         tools:layout="@layout/fragment_about" />
 </navigation>

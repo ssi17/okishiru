@@ -8,7 +8,7 @@
     <data>
         <variable
             name="favoriteFragment"
-            type="com.example.sotukenv2.ui.FavoriteFragment" />
+            type="com.example.sotukenv2.ui.fragment.FavoriteFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +30,7 @@
             android:layout_height="0dp"
             app:layout_constraintTop_toBottomOf="@id/favorite_title"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:listitem="@layout/item_view"
+            tools:listitem="@layout/item_view_article"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
