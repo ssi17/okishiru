@@ -3,12 +3,12 @@
     <item
         android:id="@+id/informationFragment"
         android:icon="@drawable/ic_bottom_home"
-        android:title="ホーム" />
+        android:title="@string/label_home" />
 
     <item
         android:id="@+id/settingFragment"
         android:icon="@drawable/ic_bottom_setting"
-        android:title="設定" />
+        android:title="@string/label_setting" />
 
     <item
         android:id="@+id/placeholder"
@@ -16,11 +16,11 @@
 
     <item
         android:id="@+id/favoriteFragment"
-        android:icon="@drawable/ic_notfavorite"
-        android:title="お気に入り" />
+        android:icon="@drawable/ic_not_favorite"
+        android:title="@string/label_favorite" />
 
     <item
         android:id="@+id/aboutFragment"
         android:icon="@drawable/ic_bottom_about"
-        android:title="使い方" />
+        android:title="@string/label_about" />
 </menu>

@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_77">#77FFFFFF</color>
+    <color name="active_icon">#54CCC6</color>
+    <color name="star">	#FFFF00</color>
 </resources>

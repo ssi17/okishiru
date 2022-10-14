@@ -82,7 +82,7 @@ class ArticleRecyclerAdapter(
         if(flagList[id].flag == 1) {
             holder.favorites.setImageResource(R.drawable.ic_favorite)
         } else {
-            holder.favorites.setImageResource(R.drawable.ic_notfavorite)
+            holder.favorites.setImageResource(R.drawable.ic_not_favorite)
         }
     }
 

@@ -22,7 +22,7 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:id="@+id/setting_title"
+            android:id="@+id/settingTitle"
             android:src="@drawable/header_title_settings"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,10 +32,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="8dp"
-            android:id="@+id/setting_text"
+            android:id="@+id/settingText"
             android:text="@string/setting_text"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/setting_title"
+            app:layout_constraintTop_toBottomOf="@id/settingTitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -45,9 +45,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:id="@+id/setting_sound"
+            android:id="@+id/settingSound"
             android:text="@string/setting_sound"
-            app:layout_constraintTop_toBottomOf="@id/setting_text"
+            app:layout_constraintTop_toBottomOf="@id/settingText"
             app:layout_constraintStart_toStartOf="parent" />
 
         <!--        バックサウンドスイッチ-->
@@ -55,12 +55,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:id="@+id/sound_switch"
+            android:id="@+id/soundSwitch"
             android:text="@string/sound_switch"
             android:checked="@{viewModel.bgmFlag}"
             android:background="@drawable/frame_style"
             android:onClick="@{() -> settingFragment.switchBgm()}"
-            app:layout_constraintTop_toBottomOf="@id/setting_sound"
+            app:layout_constraintTop_toBottomOf="@id/settingSound"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -70,9 +70,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:id="@+id/setting_guide"
+            android:id="@+id/settingGuide"
             android:text="@string/setting_guide"
-            app:layout_constraintTop_toBottomOf="@id/sound_switch"
+            app:layout_constraintTop_toBottomOf="@id/soundSwitch"
             app:layout_constraintStart_toStartOf="parent" />
 
         <!--        歴史スイッチ-->
@@ -80,12 +80,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:id="@+id/history_switch"
+            android:id="@+id/historySwitch"
             android:text="@string/history_switch"
             android:background="@drawable/frame_style"
             android:checked="@{viewModel.historyFlag}"
             android:onClick='@{() -> settingFragment.changeSetting("history")}'
-            app:layout_constraintTop_toBottomOf="@id/setting_guide"
+            app:layout_constraintTop_toBottomOf="@id/settingGuide"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -94,12 +94,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:id="@+id/trivia_switch"
+            android:id="@+id/triviaSwitch"
             android:text="@string/trivia_switch"
             android:background="@drawable/frame_style"
             android:checked="@{viewModel.triviaFlag}"
             android:onClick='@{() -> settingFragment.changeSetting("trivia")}'
-            app:layout_constraintTop_toBottomOf="@id/history_switch"
+            app:layout_constraintTop_toBottomOf="@id/historySwitch"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -108,12 +108,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:id="@+id/restaurant_switch"
+            android:id="@+id/restaurantSwitch"
             android:text="@string/restaurant_switch"
             android:background="@drawable/frame_style"
             android:checked="@{viewModel.restaurantFlag}"
             android:onClick='@{() -> settingFragment.changeSetting("restaurant")}'
-            app:layout_constraintTop_toBottomOf="@id/trivia_switch"
+            app:layout_constraintTop_toBottomOf="@id/triviaSwitch"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -122,12 +122,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:id="@+id/tourist_sight_switch"
+            android:id="@+id/touristSightSwitch"
             android:text="@string/tourist_sight_switch"
             android:background="@drawable/frame_style"
             android:checked="@{viewModel.touristSightFlag}"
             android:onClick='@{() -> settingFragment.changeSetting("tourist")}'
-            app:layout_constraintTop_toBottomOf="@id/restaurant_switch"
+            app:layout_constraintTop_toBottomOf="@id/restaurantSwitch"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

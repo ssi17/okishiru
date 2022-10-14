@@ -7,25 +7,25 @@
     android:background="@color/white_77">
 
 <!--        各アイテムのサムネイル画像-->
-<!--        <ImageView-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:id="@+id/item_image"-->
-<!--            android:contentDescription="@string/item_image_description"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/item_title"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            tools:src="@drawable/article_img_shurijo" />-->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/item_image"
+            android:contentDescription="@string/item_image_description"
+            app:layout_constraintTop_toBottomOf="@id/item_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/article_img_shurijo" />
 
-    <ImageView
-        android:id="@+id/item_image"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/item_image_description"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/article_img_shurijo" />
+<!--    <ImageView-->
+<!--        android:id="@+id/item_image"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:contentDescription="@string/item_image_description"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:src="@drawable/article_img_shurijo" />-->
 
     <!--    お気に入り登録のボタン-->
     <ImageButton
@@ -37,32 +37,33 @@
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/not_favorite_button" />
+        tools:src="@drawable/ic_notFavorite"
+        app:tint="@color/star" />
 
     <!--    各アイテムのタイトル-->
-<!--        <TextView-->
-<!--            android:id="@+id/item_title"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:textSize="20sp"-->
-<!--            android:background="@drawable/underbar"-->
-<!--            android:textAlignment="center"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toStartOf="@id/favorite_button"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            tools:text="首里城" />-->
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/article_title_underbar"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/favorite_button"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="首里城" />
 
-    <TextView
-        android:id="@+id/item_title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/underbar"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/item_image"
-        app:layout_constraintTop_toTopOf="@id/item_image"
-        tools:text="首里城" />
+<!--    <TextView-->
+<!--        android:id="@+id/item_title"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/underbar"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/item_image"-->
+<!--        app:layout_constraintTop_toTopOf="@id/item_image"-->
+<!--        tools:text="首里城" />-->
 
     <!--    各アイテムの説明-->
     <TextView

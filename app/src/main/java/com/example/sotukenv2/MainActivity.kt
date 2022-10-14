@@ -75,10 +75,10 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         // ナビゲーションの設定
         // 下部ナビゲーション
-        val bottomNavigation: BottomNavigationView= findViewById(R.id.bottom_navigation)
+        val bottomNavigation: BottomNavigationView= findViewById(R.id.bottomNavigation)
 
         // フラグメント間の遷移
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         navController = navHostFragment.navController
 
         NavigationUI.setupWithNavController(bottomNavigation, navController)

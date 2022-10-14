@@ -3,11 +3,14 @@
 
 <!--    activity_main-->
     <string name="fab">再生ボタン</string>
+    <string name="description_background">アプリの背景画像です</string>
 
-    <!--    fragment_information-->
+<!--        fragment_information-->
     <string name="start_text">再生ボタンを押すと\n発信された情報がこちらに\n表示されます</string>
+    <string name="description_top_title">アプリのトップタイトルです</string>
+    <string name="description_information_title">ホーム画面のタイトルです</string>
 
-    <!--    fragment_setting-->
+<!--        fragment_setting-->
     <string name="setting_title">Setting</string>
     <string name="setting_text">再生したい情報を選択してください</string>
     <string name="setting_sound">サウンド設定</string>
@@ -18,7 +21,10 @@
     <string name="history_switch">歴史</string>
     <string name="trivia_switch">雑学</string>
 
-    <!--    item_view-->
+<!--    fragment_favorite-->
+    <string name="description_favorite_title">お気に入り画面のタイトルです</string>
+
+<!--        item_view-->
     <string name="information_title">Information</string>
     <string name="item_image_description">この情報に関する画像です</string>
     <string name="favorite_button_description">お気に入りに登録するためのボタンです</string>
@@ -33,4 +39,23 @@
     <string name="about_favorite_title">お気に入り画面</string>
     <string name="about_inquiry_title">お問い合わせ</string>
     <string name="about_inquiry_text">あいうえお\nかきくけこ\nさしすせそ</string>
+
+    <string name="description_home_image">ホーム画面の操作方法を説明するためのサンプル画像です</string>
+    <string name="description_home_text">ホーム画面の再生ボタンに関する説明文です</string>
+    <string name="description_guide_image">ガイド画面の操作方法を説明するためのサンプル画像です</string>
+    <string name="description_guide_text1">ガイド画面のガイド情報に関する説明文の画像です</string>
+    <string name="description_guide_text2">ガイド画面のお気に入り登録に関する説明文です</string>
+    <string name="description_setting_image">設定画面の操作方法を説明するためのサンプル画像です</string>
+    <string name="description_setting_text1">設定画面のサウンド設定に関する説明文です</string>
+    <string name="description_setting_text2">設定画面のガイド設定に関する説明文です</string>
+    <string name="description_favorite_image">お気に入り画面の操作方法を説明するためのサンプル画像です</string>
+    <string name="description_favorite_text">お気に入り画面のお気に入り解除に関する説明文です</string>
+
+
+
+<!--    bottom_navigation_menu-->
+    <string name="label_home">ホーム</string>
+    <string name="label_setting">設定</string>
+    <string name="label_favorite">お気に入り</string>
+    <string name="label_about">使い方</string>
 </resources>

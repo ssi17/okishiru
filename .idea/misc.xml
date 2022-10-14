@@ -10,12 +10,20 @@
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/fragment_setting.xml" value="0.12588652482269502" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/item_view.xml" value="0.12588652482269502" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2101851851851852" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/color_test.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_about.xml" value="0.1275" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_bottom_setting.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_favorite.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_home.xml" value="0.1635" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_notFavorite.xml" value="0.1635" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_not_favorite.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_notfavorite.xml" value="0.1275" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_pause.xml" value="0.1" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_play.xml" value="0.1" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/play_button.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/search.xml" value="0.1275" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/activity_main.xml" value="0.2916666666666667" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/stop_button.xml" value="0.1635" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/activity_main.xml" value="0.23214285714285715" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_about.xml" value="0.2" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_favorite.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_information.xml" value="0.176" />
