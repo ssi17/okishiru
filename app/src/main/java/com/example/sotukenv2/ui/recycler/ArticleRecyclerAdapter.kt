@@ -80,9 +80,9 @@ class ArticleRecyclerAdapter(
 
     private fun setFavoriteButton(holder: ArticleViewHolder, id: Int) {
         if(flagList[id].flag == 1) {
-            holder.favorites.setImageResource(R.drawable.favorite_button)
+            holder.favorites.setImageResource(R.drawable.ic_favorite)
         } else {
-            holder.favorites.setImageResource(R.drawable.not_favorite_button)
+            holder.favorites.setImageResource(R.drawable.ic_notfavorite)
         }
     }
 

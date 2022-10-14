@@ -88,19 +88,29 @@
                         android:layout_height="200dp"
                         android:background="@color/white_77"
                         android:src="@drawable/about_guide_img"
-                        app:layout_constraintEnd_toStartOf="@id/guideText"
+                        app:layout_constraintEnd_toStartOf="@id/guideText1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/guideTitle" />
 
                     <ImageView
-                        android:id="@+id/guideText"
+                        android:id="@+id/guideText1"
                         android:layout_width="0dp"
-                        android:layout_height="200dp"
+                        android:layout_height="100dp"
                         android:background="@color/white_77"
-                        android:src="@drawable/about_guide_text"
+                        android:src="@drawable/about_guide_text1"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/guideImage"
                         app:layout_constraintTop_toTopOf="@id/guideImage" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/guideText2"
+                        android:src="@drawable/about_guide_text2"
+                        android:background="@color/white_77"
+                        app:layout_constraintTop_toBottomOf="@id/guideText1"
+                        app:layout_constraintStart_toStartOf="@id/guideText1"
+                        app:layout_constraintEnd_toEndOf="@id/guideText1" />
 
                     <!--設定画面-->
                     <TextView
@@ -119,19 +129,29 @@
                         android:layout_height="200dp"
                         android:background="@color/white_77"
                         android:src="@drawable/about_setting_img"
-                        app:layout_constraintEnd_toStartOf="@id/settingText"
+                        app:layout_constraintEnd_toStartOf="@id/settingText1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/settingTitle" />
 
                     <ImageView
-                        android:id="@+id/settingText"
+                        android:id="@+id/settingText1"
                         android:layout_width="0dp"
-                        android:layout_height="200dp"
+                        android:layout_height="100dp"
                         android:background="@color/white_77"
                         android:src="@drawable/about_setting_text2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/settingImage"
                         app:layout_constraintTop_toTopOf="@id/settingImage" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/settingText2"
+                        android:src="@drawable/about_setting_text2"
+                        android:background="@color/white_77"
+                        app:layout_constraintTop_toBottomOf="@id/settingText1"
+                        app:layout_constraintStart_toStartOf="@id/settingText1"
+                        app:layout_constraintEnd_toEndOf="@id/settingText1" />
 
                     <!--お気に入り画面-->
                     <TextView
