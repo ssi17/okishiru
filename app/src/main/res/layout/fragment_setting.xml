@@ -14,122 +14,114 @@
             type="com.example.sotukenv2.model.MainViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white_77">
+        android:layout_height="wrap_content"
+        android:background="@color/white_77"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
             android:id="@+id/settingTitle"
             android:src="@drawable/header_title_settings"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:contentDescription="@string/description_setting_title" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="8dp"
             android:id="@+id/settingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
             android:text="@string/setting_text"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/settingTitle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
-
-        <!--        BGMの設定-->
-        <TextView
-            android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:id="@+id/settingSound"
-            android:text="@string/setting_sound"
-            app:layout_constraintTop_toBottomOf="@id/settingText"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/settingText">
 
-        <!--        バックサウンドスイッチ-->
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:id="@+id/soundSwitch"
-            android:text="@string/sound_switch"
-            android:checked="@{viewModel.bgmFlag}"
-            android:background="@drawable/frame_style"
-            android:onClick="@{() -> settingFragment.switchBgm()}"
-            app:layout_constraintTop_toBottomOf="@id/settingSound"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/settingSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_sound"
+                    android:textAlignment="textStart" />
+
+                <!--        バックサウンドスイッチ-->
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="24dp"
+                    android:id="@+id/soundSwitch"
+                    android:text="@string/sound_switch"
+                    android:checked="@{viewModel.bgmFlag}"
+                    android:background="@drawable/frame_style"
+                    android:onClick="@{() -> settingFragment.switchBgm()}" />
 
 
-        <!--        音声読み上げの設定-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:id="@+id/settingGuide"
-            android:text="@string/setting_guide"
-            app:layout_constraintTop_toBottomOf="@id/soundSwitch"
-            app:layout_constraintStart_toStartOf="parent" />
+                <!--        音声読み上げの設定-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/settingGuide"
+                    android:text="@string/setting_guide" />
 
-        <!--        歴史スイッチ-->
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:id="@+id/historySwitch"
-            android:text="@string/history_switch"
-            android:background="@drawable/frame_style"
-            android:checked="@{viewModel.historyFlag}"
-            android:onClick='@{() -> settingFragment.changeSetting("history")}'
-            app:layout_constraintTop_toBottomOf="@id/settingGuide"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!--        歴史スイッチ-->
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="24dp"
+                    android:id="@+id/historySwitch"
+                    android:text="@string/history_switch"
+                    android:background="@drawable/frame_style"
+                    android:checked="@{viewModel.historyFlag}"
+                    android:onClick='@{() -> settingFragment.changeSetting("history")}' />
 
-        <!--        雑学スイッチ-->
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:id="@+id/triviaSwitch"
-            android:text="@string/trivia_switch"
-            android:background="@drawable/frame_style"
-            android:checked="@{viewModel.triviaFlag}"
-            android:onClick='@{() -> settingFragment.changeSetting("trivia")}'
-            app:layout_constraintTop_toBottomOf="@id/historySwitch"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!--        雑学スイッチ-->
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:id="@+id/triviaSwitch"
+                    android:text="@string/trivia_switch"
+                    android:background="@drawable/frame_style"
+                    android:checked="@{viewModel.triviaFlag}"
+                    android:onClick='@{() -> settingFragment.changeSetting("trivia")}' />
 
-        <!--        飲食店スイッチ-->
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:id="@+id/restaurantSwitch"
-            android:text="@string/restaurant_switch"
-            android:background="@drawable/frame_style"
-            android:checked="@{viewModel.restaurantFlag}"
-            android:onClick='@{() -> settingFragment.changeSetting("restaurant")}'
-            app:layout_constraintTop_toBottomOf="@id/triviaSwitch"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!--        飲食店スイッチ-->
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:id="@+id/restaurantSwitch"
+                    android:text="@string/restaurant_switch"
+                    android:background="@drawable/frame_style"
+                    android:checked="@{viewModel.restaurantFlag}"
+                    android:onClick='@{() -> settingFragment.changeSetting("restaurant")}' />
 
-        <!--        観光スポットswitch-->
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:id="@+id/touristSightSwitch"
-            android:text="@string/tourist_sight_switch"
-            android:background="@drawable/frame_style"
-            android:checked="@{viewModel.touristSightFlag}"
-            android:onClick='@{() -> settingFragment.changeSetting("tourist")}'
-            app:layout_constraintTop_toBottomOf="@id/restaurantSwitch"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!--        観光スポットswitch-->
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:id="@+id/touristSightSwitch"
+                    android:text="@string/tourist_sight_switch"
+                    android:background="@drawable/frame_style"
+                    android:checked="@{viewModel.touristSightFlag}"
+                    android:onClick='@{() -> settingFragment.changeSetting("tourist")}' />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

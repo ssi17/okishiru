@@ -22,7 +22,7 @@ class FavoriteFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val fragmentBinding = FragmentFavoriteBinding.inflate(inflater, container, false)
         binding = fragmentBinding
         return fragmentBinding.root

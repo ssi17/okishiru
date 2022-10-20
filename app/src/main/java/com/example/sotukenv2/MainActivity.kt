@@ -10,9 +10,6 @@ import android.os.Bundle
 import android.os.Looper
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
-import android.util.Log
-import android.util.TypedValue
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
@@ -25,15 +22,13 @@ import com.example.sotukenv2.database.AppDatabase
 import com.example.sotukenv2.json.Article
 import com.example.sotukenv2.model.MainViewModel
 import com.google.android.gms.location.*
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.json.JSONArray
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.util.*
-import kotlin.collections.ArrayDeque
+
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
@@ -193,8 +188,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 }
             }
 
-            override fun onError(id: String) {
-            }
+            @Deprecated("Deprecated in Java")
+            override fun onError(p0: String?) {}
 
             override fun onStart(id: String) {
                 // BGMの音量を下げる
@@ -293,10 +288,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             locationCallback,
             Looper.getMainLooper()
         )
-    }
-
-    private fun stopLocationUpdates() {
-        fusedLocationClient.removeLocationUpdates(locationCallback)
     }
 
     override fun onResume() {

@@ -129,7 +129,7 @@ class MainViewModel : ViewModel() {
                         else -> _triviaFlag.value!!
                     }) {
                     // Contentインスタンスを作成し、リストに保存
-                    val obj = adapter1.fromJson(contentsArray!!.getJSONObject(i).toString()) as Content
+                    val obj = adapter1.fromJson(contentsArray.getJSONObject(i).toString()) as Content
                     contents.add(obj)
 
                     // アーティクルIDを取得
@@ -171,14 +171,6 @@ class MainViewModel : ViewModel() {
 
     fun setDisplayArticles(list: MutableList<Article>) {
         _displayArticles.postValue(list)
-    }
-
-    // お気に入り登録情報をデータベースに追加
-    fun addFlag(id: Int) {
-        val dao = db!!.favoriteDao()
-        viewModelScope.launch {
-            dao.addFlag(Favorite(id, 0))
-        }
     }
 
     // お気に入り登録情報をデータベースから取得

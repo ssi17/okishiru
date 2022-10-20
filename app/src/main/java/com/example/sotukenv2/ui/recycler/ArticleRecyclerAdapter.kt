@@ -3,6 +3,7 @@ package com.example.sotukenv2.ui.recycler
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sotukenv2.R
@@ -52,11 +53,10 @@ class ArticleRecyclerAdapter(
         val pageUrl = articles[position].url
         // URLが無ければ隠す
         if(pageUrl == "") {
-            holder.pages.text = ""
-            holder.pages.isClickable = false
+            holder.pageGroup.visibility = View.INVISIBLE
         } else {
             // ページへ
-            holder.pages.setOnClickListener {
+            holder.pageGroup.setOnClickListener {
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(pageUrl))
                 context.startActivity(intent)
             }
@@ -67,11 +67,10 @@ class ArticleRecyclerAdapter(
         val mapUrl = articles[position].map
         // URLが無ければ隠す
         if(mapUrl == "") {
-            holder.maps.text = ""
-            holder.maps.isClickable = false
+            holder.mapGroup.visibility = View.INVISIBLE
         } else {
             // マップを開く
-            holder.maps.setOnClickListener {
+            holder.mapGroup.setOnClickListener {
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(mapUrl))
                 context.startActivity(intent)
             }

@@ -24,7 +24,7 @@ class InformationFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val fragmentBinding = FragmentInformationBinding.inflate(inflater, container, false)
         binding = fragmentBinding
         return fragmentBinding.root
@@ -45,8 +45,8 @@ class InformationFragment: Fragment() {
         }
 
         // 記事リストが更新されるタイミングで画面を更新
-        sharedViewModel.displayArticles.observe(viewLifecycleOwner) { it ->
-            setRecyclerView(it)
+        sharedViewModel.displayArticles.observe(viewLifecycleOwner) {
+            it.setRecyclerView()
             if (it.size != 0) {
                 binding!!.topTitle.setImageDrawable(null)
                 binding!!.startText.text = null
@@ -60,9 +60,9 @@ class InformationFragment: Fragment() {
     }
 
     // リサイクラーを設定
-    private fun setRecyclerView(articles: List<Article>) {
+    private fun List<Article>.setRecyclerView() {
         recyclerView = binding!!.recyclerView
-        val adapter = ArticleRecyclerAdapter(articles, sharedViewModel.flagList)
+        val adapter = ArticleRecyclerAdapter(this, sharedViewModel.flagList)
         recyclerView.adapter = adapter
         // お気に入り登録ボタンが押された時の処理
         adapter.favoriteButton = object : ArticleRecyclerAdapter.FavoriteButton {
