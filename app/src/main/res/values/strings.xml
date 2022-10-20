@@ -38,7 +38,10 @@
     <string name="about_setting_title">設定画面</string>
     <string name="about_favorite_title">お気に入り画面</string>
     <string name="about_inquiry_title">お問い合わせ</string>
-    <string name="about_inquiry_text">あいうえお\nかきくけこ\nさしすせそ</string>
+    <string name="about_inquiry_text">
+        この度はおきしる（本アプリ）をダウンロードして頂きありがとうございました。\n
+本アプリは国際電子ビジネス専門学校学生の卒業研究で作成されたものです。\n
+不明点などございましたら発表メンバーにお気軽にお問い合わせくださいませ。</string>
 
     <string name="description_home_image">ホーム画面の操作方法を説明するためのサンプル画像です</string>
     <string name="description_home_text">ホーム画面の再生ボタンに関する説明文です</string>
