@@ -40,8 +40,8 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/fab"
         android:src="@drawable/ic_play"
-        app:maxImageSize="40dp"
-        app:tint="@color/white"
+        app:maxImageSize="65dp"
+        app:tint="@null"
         app:layout_anchor="@id/bottomAppBar" />
 
     <androidx.fragment.app.FragmentContainerView
