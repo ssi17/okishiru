@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/drawable/ic_play.xml" value="0.142" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/drawable/play_icon.xml" value="0.1845" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/layout/activity_main.xml" value="0.2638888888888889" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/fragment_about.xml" value="0.12588652482269502" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/fragment_favorite.xml" value="0.12588652482269502" />
