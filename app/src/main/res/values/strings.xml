@@ -20,6 +20,7 @@
     <string name="restaurant_switch">飲食店</string>
     <string name="history_switch">歴史</string>
     <string name="trivia_switch">雑学</string>
+    <string name="description_setting_title">設定画面のタイトルです</string>
 
 <!--    fragment_favorite-->
     <string name="description_favorite_title">お気に入り画面のタイトルです</string>
@@ -29,8 +30,11 @@
     <string name="item_image_description">この情報に関する画像です</string>
     <string name="favorite_button_description">お気に入りに登録するためのボタンです</string>
 
-    <string name="item_page">≫ページへ</string>
-    <string name="item_map">≫マップを開く</string>
+    <string name="item_page">ページへ</string>
+    <string name="item_map">マップへ</string>
+
+    <string name="description_page_icon">ページへのアイコンです</string>
+    <string name="description_map_icon">マップへのアイコンです</string>
 
 <!--    fragment_about-->
     <string name="about_home_title">ホーム画面</string>
@@ -43,6 +47,7 @@
 本アプリは国際電子ビジネス専門学校学生の卒業研究で作成されたものです。\n
 不明点などございましたら発表メンバーにお気軽にお問い合わせくださいませ。</string>
 
+    <string name="description_about_title">使い方画面のタイトルです</string>
     <string name="description_home_image">ホーム画面の操作方法を説明するためのサンプル画像です</string>
     <string name="description_home_text">ホーム画面の再生ボタンに関する説明文です</string>
     <string name="description_guide_image">ガイド画面の操作方法を説明するためのサンプル画像です</string>
