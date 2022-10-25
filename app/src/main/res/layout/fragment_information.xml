@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="350dp"
             android:layout_height="200dp"
             android:id="@+id/topTitle"
             android:src="@drawable/top_title"
