@@ -54,12 +54,15 @@
                     android:text="@string/setting_sound"
                     android:textAlignment="textStart" />
 
+
                 <!--        バックサウンドスイッチ-->
                 <androidx.appcompat.widget.SwitchCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:padding="24dp"
+                    android:thumb="@drawable/thumb_selector"
+                    app:track="@drawable/track_selector"
                     android:id="@+id/soundSwitch"
                     android:text="@string/sound_switch"
                     android:checked="@{viewModel.bgmFlag}"
@@ -81,6 +84,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:padding="24dp"
+                    android:thumb="@drawable/thumb_selector"
+                    app:track="@drawable/track_selector"
                     android:id="@+id/historySwitch"
                     android:text="@string/history_switch"
                     android:background="@drawable/frame_style"
@@ -92,6 +97,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="24dp"
+                    android:thumb="@drawable/thumb_selector"
+                    app:track="@drawable/track_selector"
                     android:id="@+id/triviaSwitch"
                     android:text="@string/trivia_switch"
                     android:background="@drawable/frame_style"
@@ -103,6 +110,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="24dp"
+                    android:thumb="@drawable/thumb_selector"
+                    app:track="@drawable/track_selector"
                     android:id="@+id/restaurantSwitch"
                     android:text="@string/restaurant_switch"
                     android:background="@drawable/frame_style"
@@ -114,6 +123,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="24dp"
+                    android:thumb="@drawable/thumb_selector"
+                    app:track="@drawable/track_selector"
                     android:id="@+id/touristSightSwitch"
                     android:text="@string/tourist_sight_switch"
                     android:background="@drawable/frame_style"
