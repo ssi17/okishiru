@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/drawable/frame_style.xml" value="0.156" />
         <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/drawable/ic_play.xml" value="0.142" />
         <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/drawable/play_icon.xml" value="0.1845" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/drawable/thumb_selector.xml" value="0.1555" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/drawable/track_selector.xml" value="0.1545" />
         <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/layout/activity_main.xml" value="0.2638888888888889" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/layout/fragment_about.xml" value="0.14583333333333334" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/layout/fragment_favorite.xml" value="0.14583333333333334" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/layout/fragment_information.xml" value="0.14583333333333334" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/layout/fragment_setting.xml" value="0.14635416666666667" />
+        <entry key="..\:/AndroidStudioProjects/okishiru-db-mada/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.14739583333333334" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/fragment_about.xml" value="0.12588652482269502" />
         <entry key="..\:/Users/yuu/AndroidStudioProjects/sotukenv2/app/src/main/res/layout/fragment_favorite.xml" value="0.12588652482269502" />
@@ -18,9 +26,6 @@
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_bottom_setting.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_favorite.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_home.xml" value="0.1635" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1275" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1275" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_map.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_notFavorite.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_not_favorite.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_notfavorite.xml" value="0.1275" />
@@ -28,7 +33,6 @@
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/ic_play.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/play_button.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/search.xml" value="0.1275" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/shape_background.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/stop_button.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/switch_thumb.xml" value="0.1635" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/drawable/switch_track.xml" value="0.1635" />
@@ -36,13 +40,11 @@
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_about.xml" value="0.2" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_favorite.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_information.xml" value="0.176" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_setting.xml" value="0.264" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/item_view.xml" value="0.259375" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/item_view_about.xml" value="0.1" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/item_view_article.xml" value="0.264" />
+        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/layout/item_view_article.xml" value="0.1" />
         <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1275" />
-        <entry key="..\:/Users/yuu/Desktop/dev/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1635" />
       </map>
     </option>
   </component>
