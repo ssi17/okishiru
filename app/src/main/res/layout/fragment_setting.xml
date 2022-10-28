@@ -6,6 +6,7 @@
     tools:context=".SettingFragment">
 
     <data>
+
         <variable
             name="settingFragment"
             type="com.example.sotukenv2.ui.fragment.SettingFragment" />
