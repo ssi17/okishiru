@@ -1,12 +1,12 @@
 package com.example.sotukenv2.model
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.sotukenv2.database.AppDatabase
 import com.example.sotukenv2.database.Favorite
+import com.example.sotukenv2.database.Setting
 import com.example.sotukenv2.json.Article
 import com.example.sotukenv2.json.Content
 import com.squareup.moshi.Moshi
@@ -67,6 +67,22 @@ class MainViewModel : ViewModel() {
         _restaurantFlag.value = false
         _historyFlag.value = true
         _triviaFlag.value = true
+    }
+
+    fun setting() {
+        val dao = db!!.settingDao()
+        viewModelScope.launch {
+            val settingList: List<Setting> = dao.getAll()
+            settingList.forEach{ list ->
+                when (list.name) {
+                    "bgm" -> _bgmFlag.value = list.flag == 1
+                    "history" -> _historyFlag.value = list.flag == 1
+                    "trivia" -> _triviaFlag.value = list.flag == 1
+                    "restaurant" -> _restaurantFlag.value = list.flag == 1
+                    "tourist" -> _touristSightFlag.value = list.flag == 1
+                }
+            }
+        }
     }
 
     // 情報発信のON/OFF

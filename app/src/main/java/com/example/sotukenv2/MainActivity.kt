@@ -17,7 +17,6 @@ import androidx.core.app.ActivityCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import androidx.room.Room
 import com.example.sotukenv2.database.AppDatabase
 import com.example.sotukenv2.json.Article
 import com.example.sotukenv2.model.MainViewModel
@@ -106,14 +105,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         sharedViewModel.articlesArray = articlesArray
 
         // データベース
-        val db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java,
-            "app-database"
-        )
-            .createFromAsset("app-database.db")
-            .build()
-        sharedViewModel.db = db
+        sharedViewModel.db = AppDatabase.getInstance(applicationContext)
+        sharedViewModel.setting()
         sharedViewModel.getAllFlag()
 
         // FABで再生ボタンの処理を行う
