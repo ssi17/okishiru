@@ -58,19 +58,12 @@ class SettingFragment: Fragment() {
         // ViewModelのBGMFlagの切り替え
         sharedViewModel.switchBgmFlag()
 
-        // データベースのフラグを更新するためのflag(0　| 1)を取得する
-        val flag = if(checked) {
-            1
-        } else {
-            0
-        }
-
         // データベースのインスタンスを取得
         val db = AppDatabase.getInstance(requireContext())
         val dao = db.settingDao()
         // データベースのフラグを更新
         viewLifecycleOwner.lifecycleScope.launch {
-            dao.changeFlag("bgm", flag)
+            dao.changeFlag("bgm", getFlag(checked))
         }
     }
 
@@ -92,13 +85,7 @@ class SettingFragment: Fragment() {
 
         // データベースに登録されているフラグを反転させる
         viewLifecycleOwner.lifecycleScope.launch {
-            val flag = if(dao.getFlag(category) == 0) {
-                1
-            } else {
-                0
-            }
-
-            dao.changeFlag(category, flag)
+            dao.changeFlag(category, getFlag(dao.getFlag(category) == 0))
         }
 
         // TextToSpeechに変更を知らせる
@@ -121,6 +108,16 @@ class SettingFragment: Fragment() {
                 }
             }
         }
+    }
+
+    // データベースに登録するフラグ(0 or 1)を取得
+    private fun getFlag(flag: Boolean): Int {
+        val result = if(flag) {
+            1
+        } else {
+            0
+        }
+        return result
     }
 
     override fun onDestroyView() {
