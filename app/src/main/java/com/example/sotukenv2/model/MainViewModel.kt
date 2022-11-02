@@ -156,6 +156,9 @@ class MainViewModel : ViewModel() {
             }
         }
 
+        // 音声読み上げの順序をシャッフル
+        contents.shuffle()
+
         val moshi2 = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
         val adapter2 = moshi2.adapter(Article::class.java)
 
