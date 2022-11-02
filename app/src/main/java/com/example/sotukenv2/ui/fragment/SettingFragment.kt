@@ -8,9 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
 import com.example.sotukenv2.MainActivity
+import com.example.sotukenv2.database.AppDatabase
 import com.example.sotukenv2.databinding.FragmentSettingBinding
 import com.example.sotukenv2.model.MainViewModel
+import kotlinx.coroutines.launch
 
 class SettingFragment: Fragment() {
 
@@ -38,10 +41,13 @@ class SettingFragment: Fragment() {
 
     // BGMのON/OFF切り替え
     fun switchBgm() {
+        // ONなのかOFF
+        val checked = binding!!.soundSwitch.isChecked
+        // 音声読み上げ中ならBGMの再生・停止処理を行う
         if(sharedViewModel.startFlag) {
             requireActivity().let {
                 if(it is MainActivity) {
-                    if(binding!!.soundSwitch.isChecked) {
+                    if(checked) {
                         it.bgm.start()
                     } else {
                         it.bgm.pause()
@@ -49,7 +55,23 @@ class SettingFragment: Fragment() {
                 }
             }
         }
+        // ViewModelのBGMFlagの切り替え
         sharedViewModel.switchBgmFlag()
+
+        // データベースのフラグを更新するためのflag(0　| 1)を取得する
+        val flag = if(checked) {
+            1
+        } else {
+            0
+        }
+
+        // データベースのインスタンスを取得
+        val db = AppDatabase.getInstance(requireContext())
+        val dao = db.settingDao()
+        // データベースのフラグを更新
+        viewLifecycleOwner.lifecycleScope.launch {
+            dao.changeFlag("bgm", flag)
+        }
     }
 
     // スイッチが押されたら呼び出される
@@ -63,6 +85,21 @@ class SettingFragment: Fragment() {
         }
         // コンテンツを再取得
         sharedViewModel.getContents()
+
+        // データベースのインスタンスを取得
+        val db = AppDatabase.getInstance(requireContext())
+        val dao = db.settingDao()
+
+        // データベースに登録されているフラグを反転させる
+        viewLifecycleOwner.lifecycleScope.launch {
+            val flag = if(dao.getFlag(category) == 0) {
+                1
+            } else {
+                0
+            }
+
+            dao.changeFlag(category, flag)
+        }
 
         // TextToSpeechに変更を知らせる
         requireActivity().let {
