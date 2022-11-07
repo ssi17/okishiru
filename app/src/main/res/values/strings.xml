@@ -30,7 +30,7 @@
     <string name="item_image_description">この情報に関する画像です</string>
     <string name="favorite_button_description">お気に入りに登録するためのボタンです</string>
 
-    <string name="item_page">ページへ</string>
+    <string name="item_page">サイトへ</string>
     <string name="item_map">マップへ</string>
 
     <string name="description_page_icon">ページへのアイコンです</string>
