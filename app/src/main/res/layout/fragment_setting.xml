@@ -52,6 +52,8 @@
                     android:id="@+id/settingSound"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
                     android:text="@string/setting_sound"
                     android:textAlignment="textStart" />
 
@@ -75,6 +77,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
                     android:layout_marginTop="24dp"
                     android:id="@+id/settingGuide"
                     android:text="@string/setting_guide" />
