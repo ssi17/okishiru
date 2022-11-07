@@ -125,7 +125,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 if(sharedViewModel.bgmFlag.value!!) {
                     bgm.pause()
                 }
-                onPause()
+                tts.stop()
+                bgm.setVolume(1.0F, 1.0F)
                 fab.setImageResource(R.drawable.ic_play)
             }
         }
@@ -239,8 +240,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     override fun onPause() {
         super.onPause()
-        tts.stop()
-        bgm.setVolume(1.0F, 1.0F)
     }
 
     override fun onDestroy() {
