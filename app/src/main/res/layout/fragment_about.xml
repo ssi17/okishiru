@@ -104,26 +104,15 @@
                     <ImageView
                         android:id="@+id/guideText1"
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:paddingTop="10dp"
+                        android:layout_height="200dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="15dp"
                         android:background="@color/white_77"
-                        android:src="@drawable/about_guide_text1"
-                        android:contentDescription="@string/description_guide_text1"
+                        android:src="@drawable/about_guide_favorite_text"
+                        android:contentDescription="@string/description_home_text"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/guideImage"
                         app:layout_constraintTop_toTopOf="@id/guideImage" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:paddingBottom="10dp"
-                        android:id="@+id/guideText2"
-                        android:src="@drawable/about_guide_text2"
-                        android:background="@color/white_77"
-                        android:contentDescription="@string/description_guide_text2"
-                        app:layout_constraintTop_toBottomOf="@id/guideText1"
-                        app:layout_constraintStart_toStartOf="@id/guideText1"
-                        app:layout_constraintEnd_toEndOf="@id/guideText1" />
 
                     <!--設定画面-->
                     <TextView
@@ -152,27 +141,15 @@
                     <ImageView
                         android:id="@+id/settingText1"
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:paddingTop="10dp"
-                        android:layout_marginBottom="15dp"
+                        android:layout_height="200dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="15dp"
                         android:background="@color/white_77"
-                        android:src="@drawable/about_setting_text1"
-                        android:contentDescription="@string/description_setting_text1"
+                        android:src="@drawable/about_sound_guide_settings_text"
+                        android:contentDescription="@string/description_home_text"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/settingImage"
                         app:layout_constraintTop_toTopOf="@id/settingImage" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:paddingBottom="10dp"
-                        android:id="@+id/settingText2"
-                        android:src="@drawable/about_setting_text2"
-                        android:background="@color/white_77"
-                        android:contentDescription="@string/description_setting_text2"
-                        app:layout_constraintTop_toBottomOf="@id/settingText1"
-                        app:layout_constraintStart_toStartOf="@id/settingText1"
-                        app:layout_constraintEnd_toEndOf="@id/settingText1" />
 
                     <!--お気に入り画面-->
                     <TextView
