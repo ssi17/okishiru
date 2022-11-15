@@ -12,7 +12,8 @@
         android:id="@+id/itemTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/article_title_underbar"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -35,8 +36,9 @@
     <!--    お気に入り登録のボタン-->
     <ImageButton
         android:id="@+id/favoriteButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
         android:background="@null"
         android:contentDescription="@string/favorite_button_description"
         android:scaleType="centerCrop"
@@ -46,6 +48,8 @@
         tools:src="@drawable/ic_not_favorite" />
 
     <!--    各アイテムの説明-->
+
+    <!--    各アイテムの紹介サイト-->
     <TextView
         android:id="@+id/itemDescribe"
         android:layout_width="0dp"
@@ -53,11 +57,12 @@
         android:layout_marginHorizontal="8dp"
         app:layout_constraintBottom_toTopOf="@id/page"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/itemImage"
         app:layout_constraintTop_toBottomOf="@id/itemTitle"
+        app:layout_constraintVertical_bias="0.523"
         tools:text="首里城は、琉球王朝の王城で沖縄県内最大規模の城です。" />
 
-    <!--    各アイテムの紹介サイト-->
     <LinearLayout
         android:id="@+id/page"
         android:layout_width="wrap_content"
@@ -87,7 +92,9 @@
             android:layout_gravity="center"
             android:clickable="true"
             android:focusable="true"
-            android:text="@string/item_page" />
+            android:paddingRight="5dp"
+            android:text="@string/item_page"
+            android:textSize="12sp" />
     </LinearLayout>
 
     <!--    各アイテムをマップで表示-->
@@ -120,7 +127,9 @@
             android:layout_gravity="center"
             android:clickable="true"
             android:focusable="true"
-            android:text="@string/item_map" />
+            android:paddingRight="5dp"
+            android:text="@string/item_map"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
