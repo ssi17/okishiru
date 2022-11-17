@@ -25,8 +25,9 @@
     <!--        各アイテムのサムネイル画像-->
     <ImageView
         android:id="@+id/itemImage"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
         android:contentDescription="@string/item_image_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
