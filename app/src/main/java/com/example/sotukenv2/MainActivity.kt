@@ -2,9 +2,13 @@ package com.example.sotukenv2
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.pm.PackageManager
 import android.location.Geocoder
+import android.location.LocationManager
 import android.media.MediaPlayer
+import android.net.ConnectivityManager
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Looper
@@ -13,6 +17,7 @@ import android.speech.tts.UtteranceProgressListener
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -62,6 +67,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     @SuppressLint("RestrictedApi", "UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -156,6 +162,24 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
         }
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+
+        // GPS機能が有効になっていない場合、メッセージを表示
+        val lm: LocationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        if(!lm.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            Toast.makeText(this,
+                "位置情報機能が無効になっています",
+                Toast.LENGTH_LONG).show()
+        }
+
+        // ネットワークに接続されていない場合、メッセージを表示
+        val cm: ConnectivityManager = getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager
+        val capabilities = cm.getNetworkCapabilities(cm.activeNetwork)
+        if(capabilities == null) {
+            Toast.makeText(
+                this,
+                "ネットワークに接続されていません",
+                Toast.LENGTH_LONG).show()
+        }
     }
 
     // 音声読み上げ機能
