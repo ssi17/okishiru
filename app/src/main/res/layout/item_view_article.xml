@@ -12,7 +12,7 @@
         android:id="@+id/itemTitle"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/article_title_underbar"
         android:textAlignment="center"
@@ -48,7 +48,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/itemTitle"
-        app:tint="@color/star"
+        app:tint="#e6d335"
         tools:src="@drawable/ic_not_favorite" />
 
     <!--    各アイテムの説明-->
@@ -72,7 +72,7 @@
         android:id="@+id/page"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="20dp"
         android:padding="3dp"
         android:background="@drawable/shape_background"
         android:elevation="5dp"
@@ -107,7 +107,7 @@
         android:id="@+id/map"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="20dp"
         android:padding="3dp"
         android:background="@drawable/shape_background"
         android:elevation="5dp"
