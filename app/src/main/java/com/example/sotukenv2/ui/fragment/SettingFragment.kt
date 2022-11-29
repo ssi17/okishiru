@@ -77,7 +77,7 @@ class SettingFragment: Fragment() {
             "tourist" -> sharedViewModel.switchTouristSightFlag()
         }
         // コンテンツを再取得
-        sharedViewModel.getContents()
+        sharedViewModel.getScripts()
 
         // データベースのインスタンスを取得
         val db = AppDatabase.getInstance(requireContext())
@@ -103,7 +103,7 @@ class SettingFragment: Fragment() {
                     }
                     // 音声読み上げ中ならコンテンツが変わったことを知らせる
                     else {
-                        it.changeContents = true
+                        it.changeScripts = true
                     }
                 }
             }

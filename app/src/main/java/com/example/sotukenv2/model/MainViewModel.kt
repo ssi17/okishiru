@@ -36,18 +36,18 @@ class MainViewModel : ViewModel() {
     val touristSightFlag: LiveData<Boolean> = _touristSightFlag
 
     // jsonファイル
-    var contentsArray: JSONArray? = null
+    var scriptsArray: JSONArray? = null
     var articlesArray: JSONArray? = null
 
     // コンテンツのリスト
-    var contents: MutableList<Content> = mutableListOf()
+    var scripts: MutableList<Content> = mutableListOf()
     // アーティクルのリスト
     var articles: MutableList<Article> = mutableListOf()
     // 画面に表示するアーティクルリスト
     private val _displayArticles: MutableLiveData<MutableList<Article>> = MutableLiveData<MutableList<Article>>(mutableListOf())
     val displayArticles: LiveData<MutableList<Article>> = _displayArticles
     // 読み上げ終わったコンテンツのIDのリスト
-    val doneContents: MutableList<Int> = mutableListOf()
+    val doneScripts: MutableList<Int> = mutableListOf()
 
     // お気に入り画面用のアーティクルリスト
     var favoriteArticles: MutableList<Article> = mutableListOf()
@@ -116,12 +116,12 @@ class MainViewModel : ViewModel() {
     }
 
     // JSONファイルから記事を取得する処理
-    fun getContents() {
-        val contentsArray = contentsArray!!
+    fun getScripts() {
+        val scriptsArray = scriptsArray!!
         val articlesArray = articlesArray!!
 
         // コンテンツリスト及びアーティクルリストを初期化
-        contents = mutableListOf()
+        scripts = mutableListOf()
         articles = mutableListOf()
 
         // アーティクルIDを格納するセット
@@ -133,20 +133,20 @@ class MainViewModel : ViewModel() {
         val adapter1 = moshi1.adapter(Content::class.java)
 
         // コンテンツリストの作成
-        for(i in 0 until contentsArray.length()) {
+        for(i in 0 until scriptsArray.length()) {
             // 市町村名を取得
-            val cityName = contentsArray.getJSONObject(i).getString("city").toString()
+            val cityName = scriptsArray.getJSONObject(i).getString("city").toString()
             // 指定された市町村のコンテンツを取得
             if(cityName == city) {
-                if(when(contentsArray.getJSONObject(i).getString("category").toString()) {
+                if(when(scriptsArray.getJSONObject(i).getString("category").toString()) {
                         "観光スポット" -> _touristSightFlag.value!!
                         "飲食店" -> _restaurantFlag.value!!
                         "歴史" -> _historyFlag.value!!
                         else -> _triviaFlag.value!!
                     }) {
                     // Contentインスタンスを作成し、リストに保存
-                    val obj = adapter1.fromJson(contentsArray.getJSONObject(i).toString()) as Content
-                    contents.add(obj)
+                    val obj = adapter1.fromJson(scriptsArray.getJSONObject(i).toString()) as Content
+                    scripts.add(obj)
 
                     // アーティクルIDを取得
                     for(id in obj.articleId) {
@@ -157,7 +157,7 @@ class MainViewModel : ViewModel() {
         }
 
         // 音声読み上げの順序をシャッフル
-        contents.shuffle()
+        scripts.shuffle()
 
         val moshi2 = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
         val adapter2 = moshi2.adapter(Article::class.java)

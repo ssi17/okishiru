@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private var requestingLocationUpdates: Boolean = false
 
-    var changeContents: Boolean = false
+    var changeScripts: Boolean = false
 
     //位置情報使用の権限許可を確認
     private val requestPermissionLauncher = registerForActivityResult(
@@ -98,16 +98,16 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val assetManager = resources.assets
 
         // Scripts.json
-        val contentsFile = assetManager.open("Scripts.json")
-        var br = BufferedReader(InputStreamReader(contentsFile))
-        val contentsArray = JSONArray(br.readText())
+        val scriptsFile = assetManager.open("Scripts.json")
+        var br = BufferedReader(InputStreamReader(scriptsFile))
+        val scriptsArray = JSONArray(br.readText())
 
         // Articles.json
         val articlesFile = assetManager.open("Articles.json")
         br = BufferedReader(InputStreamReader(articlesFile))
         val articlesArray = JSONArray(br.readText())
 
-        sharedViewModel.contentsArray = contentsArray
+        sharedViewModel.scriptsArray = scriptsArray
         sharedViewModel.articlesArray = articlesArray
 
         // データベース
@@ -124,7 +124,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 if(sharedViewModel.bgmFlag.value!!) {
                     bgm.start()
                 }
-                if(sharedViewModel.contents.size != 0) {
+                if(sharedViewModel.scripts.size != 0) {
                     startSpeech()
                 }
             } else {
@@ -190,7 +190,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
 
         val articles = sharedViewModel.articles
-        val contents = sharedViewModel.contents
+        val scripts = sharedViewModel.scripts
 
         val list: MutableList<Article> = sharedViewModel.displayArticles.value!!
 
@@ -199,9 +199,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 // BGMの音量を戻す
                 bgm.setVolume(1.0F, 1.0F)
                 // 読み上げが終わったコンテンツのリストを更新
-                sharedViewModel.doneContents.add(Integer.parseInt(id))
-                if(changeContents) {
-                    changeContents = false
+                sharedViewModel.doneScripts.add(Integer.parseInt(id))
+                if(changeScripts) {
+                    changeScripts = false
                     startSpeech()
                 }
             }
@@ -213,7 +213,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 // BGMの音量を下げる
                 bgm.setVolume(0.1F, 0.1F)
                 // 読み上げられているコンテンツの記事を記事リストから取得
-                for(content in contents) {
+                for(content in scripts) {
                     // 読み上げているコンテンツを探索
                     if(content.id == Integer.parseInt(id)) {
                         for(article in articles) {
@@ -239,9 +239,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
         })
 
-        for(content in sharedViewModel.contents) {
+        for(content in sharedViewModel.scripts) {
             // 読み上げが終わっているコンテンツなら処理をスキップ
-            if(sharedViewModel.doneContents.contains(content.id)) {
+            if(sharedViewModel.doneScripts.contains(content.id)) {
                 continue
             }
             // 音声データの取得
@@ -284,9 +284,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         if(sharedViewModel.city != city) {
             sharedViewModel.city = city
-            sharedViewModel.getContents()
+            sharedViewModel.getScripts()
             if(sharedViewModel.startFlag) {
-                changeContents = true
+                changeScripts = true
             }
         }
     }
