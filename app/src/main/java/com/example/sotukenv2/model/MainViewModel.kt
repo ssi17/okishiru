@@ -8,7 +8,7 @@ import com.example.sotukenv2.database.AppDatabase
 import com.example.sotukenv2.database.Favorite
 import com.example.sotukenv2.database.Setting
 import com.example.sotukenv2.json.Article
-import com.example.sotukenv2.json.Scripts
+import com.example.sotukenv2.json.Script
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.launch
@@ -40,7 +40,7 @@ class MainViewModel : ViewModel() {
     var articlesArray: JSONArray? = null
 
     // コンテンツのリスト
-    var scripts: MutableList<Scripts> = mutableListOf()
+    var scripts: MutableList<Script> = mutableListOf()
     // アーティクルのリスト
     var articles: MutableList<Article> = mutableListOf()
     // 画面に表示するアーティクルリスト
@@ -130,7 +130,7 @@ class MainViewModel : ViewModel() {
         // JSONを扱うためのクラス
         val moshi1 = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
         // JSONのデータを格納するクラスを指定
-        val adapter1 = moshi1.adapter(Scripts::class.java)
+        val adapter1 = moshi1.adapter(Script::class.java)
 
         // コンテンツリストの作成
         for(i in 0 until scriptsArray.length()) {
@@ -145,7 +145,7 @@ class MainViewModel : ViewModel() {
                         else -> _triviaFlag.value!!
                     }) {
                     // Scriptインスタンスを作成し、リストに保存
-                    val obj = adapter1.fromJson(scriptsArray.getJSONObject(i).toString()) as Scripts
+                    val obj = adapter1.fromJson(scriptsArray.getJSONObject(i).toString()) as Script
                     scripts.add(obj)
 
                     // アーティクルIDを取得

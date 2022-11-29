@@ -2,7 +2,7 @@ package com.example.sotukenv2.json
 
 import com.squareup.moshi.Json
 
-data class Scripts(
+data class Script(
     val id: Int,
     val city: String,
     val category: String,
@@ -13,7 +13,7 @@ data class Scripts(
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
 
-        other as Scripts
+        other as Script
 
         if (id != other.id) return false
         if (city != other.city) return false
