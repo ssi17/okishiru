@@ -213,12 +213,12 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 // BGMの音量を下げる
                 bgm.setVolume(0.1F, 0.1F)
                 // 読み上げられているコンテンツの記事を記事リストから取得
-                for(content in scripts) {
+                for(script in scripts) {
                     // 読み上げているコンテンツを探索
-                    if(content.id == Integer.parseInt(id)) {
+                    if(script.id == Integer.parseInt(id)) {
                         for(article in articles) {
                             // 記事リストの中からこのコンテンツに関する記事を探索
-                            if(content.articleId.contains(article.id)) {
+                            if(script.articleId.contains(article.id)) {
                                 // すでに同じ記事が表示されていればリストから削除
                                 if(list.contains(article)) {
                                     list.remove(article)
@@ -239,15 +239,15 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
         })
 
-        for(content in sharedViewModel.scripts) {
+        for(script in sharedViewModel.scripts) {
             // 読み上げが終わっているコンテンツなら処理をスキップ
-            if(sharedViewModel.doneScripts.contains(content.id)) {
+            if(sharedViewModel.doneScripts.contains(script.id)) {
                 continue
             }
             // 音声データの取得
-            val text = content.voice
+            val text = script.voice
             // 音声読み上げのキューに追加
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "${content.id}")
+            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "${script.id}")
         }
     }
 
