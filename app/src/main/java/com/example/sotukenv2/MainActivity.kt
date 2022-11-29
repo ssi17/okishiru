@@ -97,8 +97,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         // JSONファイルを取得し、ViewModelへ保存
         val assetManager = resources.assets
 
-        // Contents.json
-        val contentsFile = assetManager.open("Contents.json")
+        // Scripts.json
+        val contentsFile = assetManager.open("Scripts.json")
         var br = BufferedReader(InputStreamReader(contentsFile))
         val contentsArray = JSONArray(br.readText())
 
