@@ -92,7 +92,7 @@
     "name": "弁ヶ岳公園",
     "describe": "弁ヶ岳公園は、市が管理する公園で那覇市で最も高い場所です。\n首里城を見下ろすことができます。",
     "url": "",
-    "img": "image",
+    "img": "",
     "map": "https://www.google.co.jp/maps/place/%E5%BC%81%E3%83%B6%E5%B2%B3%E5%85%AC%E5%9C%92/@26.2180693,127.7226323,15z/data=!3m1!4b1!4m5!3m4!1s0x34e56c0465abf367:0x9a7d085d2bcec8df!8m2!3d26.2180696!4d127.7313656?hl=ja"
   },
   {
@@ -156,7 +156,7 @@
     "name": "志魯・布里の乱",
     "describe": "志魯･布里の乱は、琉球王国第６代の王位をめぐって起こった争いです。",
     "url": "",
-    "img": "image",
+    "img": "",
     "map": ""
   },
   {
@@ -164,7 +164,7 @@
     "name": "護佐丸・阿麻和利の乱",
     "describe": "護佐丸･阿麻和利の乱は、1458年に尚泰久王の時代に起きた内乱のことです。",
     "url": "",
-    "img": "image",
+    "img": "",
     "map": ""
   },
   {
@@ -172,7 +172,7 @@
     "name": "オヤケアカハチの乱",
     "describe": "オヤケアカハチの乱は、1500年にオヤケアカハチと、琉球王国との間で行われた戦争です。",
     "url": "",
-    "img": "image",
+    "img": "",
     "map": ""
   },
   {
@@ -180,7 +180,7 @@
     "name": "琉球王国成立",
     "describe": "1429年、第一尚氏王統の尚巴志王の三山統一によって琉球王国が成立しました。",
     "url": "",
-    "img": "image",
+    "img": "",
     "map": ""
   },
   {
@@ -196,7 +196,7 @@
     "name": "一番街、ゲート通り",
     "describe": "一番街は、1975年に沖縄で初めてアーケード化した商店街です。コザゲート通りはその名の通り、米軍基地のゲート（出入り口）を起点とする通りです。",
     "url": "https://www.kozaweb.jp/featurePages/show/45",
-    "img": "image",
+    "img": "",
     "map": "https://goo.gl/maps/fSBskrB1cJGaFoEN8"
   },
   {
@@ -276,7 +276,7 @@
     "name": "やんばる学びの森",
     "describe": "オートキャンプ場、アスレチック広場、鬼太郎ハウスなどがあり、自然体験や野外活動を中心に、子供から大人まで幅広く楽しむことができる場所です。",
     "url": "https://yanbaru-manabi.com/",
-    "img": "image",
+    "img": "",
     "map": "https://goo.gl/maps/v42EqBNG8crLAiGq8"
   },
   {
@@ -292,7 +292,7 @@
     "name": "本部町立博物館",
     "describe": "沖縄島北部にある本部町の総合博物館です。1982年の開館以来、本部町の歴史・民俗と自然をテーマとした常設展示を行っています。",
     "url": "http://motosyohaku.wp.xdomain.jp/",
-    "img": "image",
+    "img": "",
     "map": "https://goo.gl/maps/RbydQT88hZhjwZXM6"
   },
   {
@@ -332,7 +332,7 @@
     "name": "伊江島",
     "describe": "伊江島は、本部港からフェリーで30分あまり気軽に行ける離島。伊江島タッチュー(イータッチュー)の愛称で親しまれています。",
     "url": "https://iejima.okinawa/",
-    "img": "image",
+    "img": "",
     "map": "https://goo.gl/maps/9jgrCXb8TkWHoA2A7"
   }
 ]
