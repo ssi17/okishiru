@@ -25,7 +25,15 @@ class ArticleRecyclerAdapter(
         val context = holder.item.context
 
         // サムネイル画像を設定
-        val resId = context.resources.getIdentifier("article_img_" + articles[position].img, "drawable", context.packageName)
+        val resId = if(articles[position].img != "") {
+            context.resources.getIdentifier(
+                "article_img_" + articles[position].img,
+                "drawable",
+                context.packageName
+            )
+        } else {
+            R.drawable.icon
+        }
         holder.images.setImageResource(resId)
 
         // お気に入り登録ボタンの設定
