@@ -8,6 +8,7 @@ import android.location.Geocoder
 import android.location.LocationManager
 import android.media.MediaPlayer
 import android.net.ConnectivityManager
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -88,8 +89,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         bottomNavigation.menu.getItem(2).isEnabled = false
 
         // BGMの設定
-        bgm = MediaPlayer.create(this, R.raw.bgm)
-        bgm.isLooping = true    // ループ再生をON
+        createBgm(1)
 
         // TextToSpeechの初期化
         tts = TextToSpeech(this, this)
@@ -179,6 +179,25 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 this,
                 "ネットワークに接続されていません",
                 Toast.LENGTH_LONG).show()
+        }
+    }
+
+    // 曲を切り替えながらBGMを再生
+    private fun createBgm(num: Int){
+        var count: Int = num
+        bgm = MediaPlayer.create(this, Uri.parse("android.resource://$packageName/raw/bgm_$count"))
+        // 再生状態でBGMがONならスタート
+        if(sharedViewModel.startFlag && sharedViewModel.bgmFlag.value!!) bgm.start()
+        // 曲が終わったときの処理
+        bgm.setOnCompletionListener {
+            // bgmインスタンスを一度解放
+            bgm.stop()
+            bgm.reset()
+            bgm.release()
+            count++
+            if(count > 3) count = 1
+            // 再帰呼び出し
+            createBgm(count)
         }
     }
 
