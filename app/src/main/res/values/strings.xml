@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">オキシル v2</string>
+    <string name="app_name">おきしる</string>
 
 <!--    activity_main-->
     <string name="fab">再生ボタン</string>
@@ -42,7 +42,7 @@
     <string name="about_setting_title">設定画面</string>
     <string name="about_favorite_title">お気に入り画面</string>
     <string name="about_inquiry_title">お問い合わせ</string>
-    <string name="about_inquiry_text">この度はオキシル（本アプリ）をダウンロードして頂きありがとうございました。\n
+    <string name="about_inquiry_text">この度はおきしる（本アプリ）をダウンロードして頂きありがとうございました。\n
 本アプリは国際電子ビジネス専門学校学生の卒業研究で作成されたものです。\n不明点などございましたら発表メンバーにお気軽にお問い合わせくださいませ。</string>
 
     <string name="description_about_title">使い方画面のタイトルです</string>
