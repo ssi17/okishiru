@@ -25,7 +25,7 @@ class ArticleRecyclerAdapter(
         val context = holder.item.context
 
         // サムネイル画像を設定
-        val resId = if(articles[position].img != "") {
+        val resId = if(articles[position].img != "none") {
             context.resources.getIdentifier(
                 "article_img_" + articles[position].img,
                 "drawable",
