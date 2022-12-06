@@ -61,8 +61,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             // それでも拒否された時の対応
             val toast = Toast.makeText(
                 this,
-                "これ以上なにもできません",
-                Toast.LENGTH_SHORT
+                "位置情報の取得権限を許可してください",
+                Toast.LENGTH_LONG
             )
             toast.show()
         }
