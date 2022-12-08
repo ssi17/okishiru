@@ -187,7 +187,10 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         var count: Int = num
         bgm = MediaPlayer.create(this, Uri.parse("android.resource://$packageName/raw/bgm_$count"))
         // 再生状態でBGMがONならスタート
-        if(sharedViewModel.startFlag && sharedViewModel.bgmFlag.value!!) bgm.start()
+        if(sharedViewModel.startFlag && sharedViewModel.bgmFlag.value!!) {
+            if(tts.isSpeaking) bgm.setVolume(0.1F, 0.1F)
+            bgm.start()
+        }
         // 曲が終わったときの処理
         bgm.setOnCompletionListener {
             // bgmインスタンスを一度解放
