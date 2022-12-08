@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "sotuken v2"
+rootProject.name = "okishiru"
 include ':app'

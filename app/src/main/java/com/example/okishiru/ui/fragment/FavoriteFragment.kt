@@ -1,4 +1,4 @@
-package com.example.sotukenv2.ui.fragment
+package com.example.okishiru.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sotukenv2.databinding.FragmentFavoriteBinding
-import com.example.sotukenv2.model.MainViewModel
-import com.example.sotukenv2.ui.recycler.ArticleRecyclerAdapter
+import com.example.okishiru.databinding.FragmentFavoriteBinding
+import com.example.okishiru.model.MainViewModel
+import com.example.okishiru.ui.recycler.ArticleRecyclerAdapter
 
 class FavoriteFragment: Fragment() {
 

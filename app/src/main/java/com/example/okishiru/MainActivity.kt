@@ -1,4 +1,4 @@
-package com.example.sotukenv2
+package com.example.okishiru
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -23,9 +23,9 @@ import androidx.core.app.ActivityCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import com.example.sotukenv2.database.AppDatabase
-import com.example.sotukenv2.json.Article
-import com.example.sotukenv2.model.MainViewModel
+import com.example.okishiru.database.AppDatabase
+import com.example.okishiru.json.Article
+import com.example.okishiru.model.MainViewModel
 import com.google.android.gms.location.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton

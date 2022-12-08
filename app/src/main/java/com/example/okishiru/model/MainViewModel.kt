@@ -1,14 +1,14 @@
-package com.example.sotukenv2.model
+package com.example.okishiru.model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.sotukenv2.database.AppDatabase
-import com.example.sotukenv2.database.Favorite
-import com.example.sotukenv2.database.Setting
-import com.example.sotukenv2.json.Article
-import com.example.sotukenv2.json.Script
+import com.example.okishiru.database.AppDatabase
+import com.example.okishiru.database.Favorite
+import com.example.okishiru.database.Setting
+import com.example.okishiru.json.Article
+import com.example.okishiru.json.Script
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.launch

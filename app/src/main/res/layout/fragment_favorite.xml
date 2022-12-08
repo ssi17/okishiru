@@ -8,7 +8,7 @@
     <data>
         <variable
             name="favoriteFragment"
-            type="com.example.sotukenv2.ui.fragment.FavoriteFragment" />
+            type="com.example.okishiru.ui.fragment.FavoriteFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
