@@ -1,11 +1,11 @@
-package com.example.sotukenv2.ui.fragment
+package com.example.okishiru.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.sotukenv2.databinding.FragmentAboutBinding
+import com.example.okishiru.databinding.FragmentAboutBinding
 
 
 class AboutFragment: Fragment() {

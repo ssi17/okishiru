@@ -1,11 +1,11 @@
-package com.example.sotukenv2.database
+package com.example.okishiru.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Setting(
-    @PrimaryKey val name: String,
+data class Favorite(
+    @PrimaryKey val id: Int,
     @ColumnInfo var flag: Int
 )

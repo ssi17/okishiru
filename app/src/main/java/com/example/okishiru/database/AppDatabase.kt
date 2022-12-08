@@ -1,4 +1,4 @@
-package com.example.sotukenv2.database
+package com.example.okishiru.database
 
 import android.content.Context
 import androidx.room.Database

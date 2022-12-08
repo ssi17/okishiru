@@ -9,10 +9,10 @@
 
         <variable
             name="settingFragment"
-            type="com.example.sotukenv2.ui.fragment.SettingFragment" />
+            type="com.example.okishiru.ui.fragment.SettingFragment" />
         <variable
             name="viewModel"
-            type="com.example.sotukenv2.model.MainViewModel" />
+            type="com.example.okishiru.model.MainViewModel" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat

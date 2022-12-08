@@ -1,4 +1,4 @@
-package com.example.sotukenv2.ui.fragment
+package com.example.okishiru.ui.fragment
 
 import android.os.Bundle
 import android.os.Handler
@@ -9,10 +9,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
-import com.example.sotukenv2.MainActivity
-import com.example.sotukenv2.database.AppDatabase
-import com.example.sotukenv2.databinding.FragmentSettingBinding
-import com.example.sotukenv2.model.MainViewModel
+import com.example.okishiru.MainActivity
+import com.example.okishiru.database.AppDatabase
+import com.example.okishiru.databinding.FragmentSettingBinding
+import com.example.okishiru.model.MainViewModel
 import kotlinx.coroutines.launch
 
 class SettingFragment: Fragment() {

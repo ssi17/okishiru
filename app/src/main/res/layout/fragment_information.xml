@@ -7,7 +7,7 @@
     <data>
         <variable
             name="informationFragment"
-            type="com.example.sotukenv2.ui.fragment.InformationFragment" />
+            type="com.example.okishiru.ui.fragment.InformationFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

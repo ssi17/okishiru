@@ -1,4 +1,4 @@
-package com.example.sotukenv2
+package com.example.okishiru
 
 import org.junit.Test
 

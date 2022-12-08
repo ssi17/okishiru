@@ -1,4 +1,4 @@
-package com.example.sotukenv2.json
+package com.example.okishiru.json
 
 import com.squareup.moshi.Json
 

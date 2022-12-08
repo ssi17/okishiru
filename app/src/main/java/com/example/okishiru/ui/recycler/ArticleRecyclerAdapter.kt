@@ -1,4 +1,4 @@
-package com.example.sotukenv2.ui.recycler
+package com.example.okishiru.ui.recycler
 
 import android.content.Intent
 import android.net.Uri
@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sotukenv2.R
-import com.example.sotukenv2.database.Favorite
-import com.example.sotukenv2.json.Article
-import com.example.sotukenv2.ui.holder.ArticleViewHolder
+import com.example.okishiru.R
+import com.example.okishiru.database.Favorite
+import com.example.okishiru.json.Article
+import com.example.okishiru.ui.holder.ArticleViewHolder
 
 class ArticleRecyclerAdapter(
     private val articles: List<Article>,

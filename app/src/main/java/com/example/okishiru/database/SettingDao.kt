@@ -1,4 +1,4 @@
-package com.example.sotukenv2.database
+package com.example.okishiru.database
 
 import androidx.room.Dao
 import androidx.room.Query

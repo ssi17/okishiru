@@ -8,7 +8,7 @@
     <data>
         <variable
             name="aboutFragment"
-            type="com.example.sotukenv2.ui.fragment.AboutFragment" />
+            type="com.example.okishiru.ui.fragment.AboutFragment" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat
