@@ -70,7 +70,6 @@ class ArticleRecyclerAdapter(
             }
         }
 
-
         // マップのURLを取得
         val mapUrl = articles[position].map
         // URLが無ければ隠す
